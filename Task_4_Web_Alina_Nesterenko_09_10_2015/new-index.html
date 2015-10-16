@@ -1,0 +1,310 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+		
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/close-tab.js"></script>	
+	<script src="js/script-slider.js"></script>	
+	
+	<link href="css/style.css" rel="stylesheet" type="text/css" /> 
+	<link href="icon.ico" rel="shortcut icon" type="image/x-icon"> 
+	
+	<title>Интернет-магазин цифровой и бытовой техники</title>
+</head>
+
+<body>
+	
+<div id="wrapper">
+
+	<!--header starts-->
+	<header id="header">
+	
+	<!--top bar starts-->
+	<section class="top-bar">
+            
+	<nav id="nav">
+		<ul>
+			<li><a href="about.html">О нас</a></li>	
+			<li><a href="goods.html">Магазин</a></li>	
+			<li><a href=#>Доставка</a></li>	
+		</ul>
+	</nav>
+	
+	
+		<p id="city-description">Ваш город -</p>
+		
+			<a href="#region-lightbox" id="region" document.getElementById("region-list").className = "Hello Dolly.";>Киев</a>    <!--      -->
+			
+			
+			
+		
+	<noindex>
+		<ul class="user-options">
+			<li class="user">
+			<a class="open-popup" href="#entry-lightbox">
+				<i class="ico">L</i>
+				<span class="name">Вход</span>	
+			</a>
+			</li>
+			
+			<li id="ottBasketSmallWrap" class="cart empty-small-cart">
+				<div>
+					<i class="ico">K</i>
+					<span class="m-sm-cart">Корзина:</span>
+					<span>0</span>
+				</div>
+			</li>
+		</ul>
+		
+	</noindex>
+	
+	</section>
+	<div class="menu-m-swich"></div>
+	<div class="m-swich-off"></div>
+	
+	<section class="header-info">
+		<a class="logo" href="index.html"></a>
+		<noindex>
+			<div class="mini-m-h">
+				<i id="m-back"></i>
+				Корзина
+			</div>
+			<form class="search-form" action="/search/">
+				<fieldset>
+
+					<input id="search" class="input-autocomplte" type="text" clear="clear" name="q" placeholder="Поиск" >
+					<input class="buttSearchSend" type="submit" value="search">
+					<a class="btnSearchClose btn-delete" href="#" style="display: none;">удалить</a>
+				</fieldset>
+			</form>
+		</noindex>
+		
+		<div class="contacts call_phone_1_1">
+			<a class="phone" tpphone="t1" href="tel:84957558888">
+				<span>8 (010)</span>
+				123-45-67
+			</a>
+			<style>
+				@media only screen and (max-width:767px){.note{display: none;}}
+			</style>
+			<strong class="note" style="font-size: 12px;"> ЗАКАЗ ПО ТЕЛЕФОНУ С 9.00 ДО 21.00</strong>
+		</div>
+	</section>
+	
+	<section class="order-management">
+		<ul>
+			<li>
+				<a href="/checkout/">
+					Корзина
+					<span class="tp-span-count-basket">(0)</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	
+	</header>
+ 
+ 
+ 
+ 
+ <!--                   ----------------------------------------------------------                         -->
+ 
+ 
+ 
+ 
+ <div id="content">
+ 
+ <!-- -------------------- MENU ------------------------ -->
+ 
+ 	<ul id="menu">
+    <li><a href="#">Выбор по бренду</a>
+		<div class="dropdown_1column">
+			<p>1 Column content</p>
+			<p>1 Column content</p>
+			<p>1 Column content</p>
+			<p>1 Column content</p>
+
+		</div>
+	</li>
+    <li><a href="#">Крупная бытовая</a>
+		<div class="dropdown_2columns">
+			<p>2 Columns content</p>
+			<p>2 Column content</p>
+			<p>2 Column content</p>
+			<p>2 Column content</p>
+		</div>
+	</li>
+    <li><a href="#">Мелкая бытовая</a></li>
+    <li><a href="#">Для кухни</a></li>
+    <li><a href="#">Климат</a></li>
+	<li><a href="#">Аудио Видео Фото</a></li>
+    <li><a href="#">Компьютеры Ноутбуки</a></li>
+    <li><a href="#">Телефоны Смартфоны</a></li>
+</ul>
+ 
+  <!-- -------------------- !MENU ------------------------ -->
+ 
+ 
+	<div id="contentContainer">
+		<div id="wr">
+			<div id="itemOne" class="content"></div>
+			<div id="itemTwo" class="content"></div>
+			<div id="itemThree" class="content"></div>
+			<div id="itemFour" class="content"></div>
+		</div>
+	</div>
+
+
+<div id="navLinks">
+    <ul>
+        <li class="itemLinks" data-pos="0px"></li>
+        <li class="itemLinks" data-pos="-1485px"></li>
+        <li class="itemLinks" data-pos="-2970px"></li>
+        <li class="itemLinks" data-pos="-4455px"></li>
+    </ul>
+</div>
+<!--                   ----------------------------------------------------------                         -->
+<script>
+// запрашиваем DOM
+var links = document.querySelectorAll(".itemLinks");
+var wr = document.querySelector("#wr");
+
+// activeLink обеспечивает метку для активного элемента
+var activeLink = 0;
+
+// устанавливаем отслеживание событий
+for (var i = 0; i < links.length; i++) {
+    var link = links[i];
+    link.addEventListener('click', setClickedItem, false);
+
+    // определяем элемент для activeLink
+    link.itemID = i;
+}
+
+// устанавливаем первый элемент в качестве активного
+links[activeLink].classList.add("active");
+
+function setClickedItem(e) {
+    removeActiveLinks();
+
+    var clickedLink = e.target;
+    activeLink = clickedLink.itemID;
+
+    changePosition(clickedLink);
+}
+
+function removeActiveLinks() {
+    for (var i = 0; i < links.length; i++) {
+        links[i].classList.remove("active");
+    }
+}
+
+// Обработчик изменяет позицию слайдера, после того, как мы убедились,
+// что в качестве активной обозначена нужная нам ссылка.
+function changePosition(link) {
+    link.classList.add("active");
+
+    var position = link.getAttribute("data-pos");
+    wr.style.left = position;
+}
+</script>
+
+<div id="block"> 
+</div>
+
+
+
+<!-- -----------------------------------------  -->
+
+
+
+
+<!--    ------------------------------------------------------------------------------- -->
+
+
+</div>
+
+
+
+
+ 
+ 
+  
+	<footer id="footer">
+	
+
+		<div class="contacts call_phone_1_1">
+			<a href="tel:84957558888" tpphone="t1" class="phone">
+				<span>8 (010)</span>
+				123-45-67
+			</a>
+			<style>
+				@media only screen and (max-width:767px){.note{display: none;}}
+			</style>
+			<strong style="font-size: 12px;" class="note"> ЗАКАЗ ПО ТЕЛЕФОНУ С 9.00 ДО 21.00</strong>
+		</div>
+
+<div class="footer-list">
+<p> Сервис и помощь </p>
+<ul>
+<li><a href="/"> Как сделать заказ </a></li><a href="/">
+</a><li><a href="/"></a><a href="/"> Способ оплаты </a></li><a href="/">
+</a><li><a href="/"></a><a href="/"> Возврат </a></li><a href="/">
+</a></ul><a href="/">
+</a></div><a href="/">
+
+</a><div class="footer-list">
+<p> О компании </p>
+<ul><a href="/">
+</a><li><a href="/"></a><a href="about.html"> О нас </a></li><a href="/">
+</a><li><a href="/"></a><a href="/"> Вакансии </a></li><a href="/">
+</a><li><a href="/"></a><a href="/"> Партнерам </a></li><a href="/">
+</a></ul><a href="/">
+</a></div><a href="/">
+
+</a><div class="footer-list">
+<p> Навигация </p>
+<ul><a href="/">
+</a><li><a href="/"></a><a href="index.php"> Главая страница </a></li><a href="index.php">
+</a><li><a href="index.php"></a><a href="/"> Обратная связь </a></li><a href="/">
+</a></ul><a href="/">
+
+
+
+
+</a></div><a href="/">
+
+</a>
+
+<div class="col-1">
+<noindex>
+<span class="footer-h">Подпишитесь на акции и скидки</span>
+<form class="subscription-form" action="/personal/subscribe/">
+<fieldset id="field-subscription">
+<div class="text">
+<input type="text" placeholder="Введите e-mail" name="sub_email" clear="clear">
+</div>
+<input type="submit" value="отправить">
+</fieldset>
+</form>
+<div id="footer-share">
+<a class="fb_share" title="Технопарк в Facebook" href="https://www.facebook.com/technoparkru" target="_blank"></a>
+<a class="vk_share" title="Технопарк Вконтакте" href="http://vk.com/technoparkru" target="_blank"></a>
+<a class="plus_share" title="Технопарк в Google+" href="https://plus.google.com/105279620647338743694/posts" target="_blank"></a>
+</div>
+
+</noindex>
+</div>
+
+
+	</footer>
+<div id="copyright">
+	<p>© 2015 Alina Nesterenko</p>
+</div>
+
+</div>
+
+</body>
+</html>

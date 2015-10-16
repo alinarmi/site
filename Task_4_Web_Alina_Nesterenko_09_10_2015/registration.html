@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+body{
+	color:#fff;
+}
+#input-email-pass{
+	position:relative;
+	background: #f9fcfd;
+	height:195px;
+}
+
+#little-block{
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19); 
+	background: #029ab1;
+	height: 40px;
+	margin: 90px 0 0 457px;
+	width: 40%;
+}
+
+#little-block p{
+	align:center;
+}
+
+#block-auth p{
+	margin-left:265px;
+	padding:5px;
+}
+#auth_login{	
+    margin:16px 0 0 -32px;
+    padding: 11px;
+    width: 100%;
+    border: 1px solid #029ab1;
+	font-size:16px;
+}
+#auth_login:hover{
+	background: #fcfdfe;
+	cursor: auto;	
+}
+
+#auth_pass{	
+margin-top: 20px;
+    margin-left: -32px;
+    padding: 11px;
+    width: 100%;
+    border: 1px solid #029ab1;
+	font-size:16px;
+}
+#auth_pass:hover{
+	background: #fcfdfe;
+	cursor: auto;	
+}
+
+#LogIn{
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19); 
+	height: 40px;
+    float: right;
+    margin: 20px 8px 0px 0px;
+    width: 120px;
+    background-color: #029ab1;
+    color: #fff;
+    font-size: 16px;	
+}
+#LogIn:hover{	
+	background-color: #018a9f;   	
+}
+
+
+
+
+
+#block-auth {
+  background: #000;
+  height: 100%;
+  opacity: 0.9;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+  left: 0;
+}
+
+#popup {
+  height: 200px;
+  position: fixed;
+  
+  
+}
+</style>
+</head>
+<body>
+<h1>Сайт</h1>
+<h1>Сайт</h1>
+<h1>Сайт</h1>
+<h1>Сайт</h1>
+<h1>Сайт</h1>
+<h1>Сайт</h1>
+<h1>Сайт</h1>
+<h1>Сайт</h1>
+<h1>Сайт</h1>
+
+
+
+<div id="block-auth">
+	<div id ="popup">
+	<div id="little-block">
+	<p style="cursor: pointer;" onclick="document.getElementById('block-auth').style.display='none';">Закрыть</p>
+	<p>Вход</p>
+	<form method="post">		
+		<ul id="input-email-pass">						
+			<li><input type="email" id="auth_login" placeholder="E-mail" /></li>
+			<li><input type="password" id="auth_pass" placeholder="Пароль" /><span id="button-pass-show-hide" class="pass-show"></span></li>
+			<input type="submit" id="LogIn" name="LogIn" value="Вход" />
+
+		</ul>
+	</form>
+
+</div>
+</div>
+</div>
+
+
+</body>
+</html>

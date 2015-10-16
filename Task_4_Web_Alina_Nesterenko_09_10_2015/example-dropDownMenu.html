@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+</head>
+<body>	
+	<ul id="menu">
+    <li><a href="#">Выбор по бренду</a>
+		<div class="dropdown_1column">
+			<p>1 Column content</p>
+			<p>1 Column content</p>
+			<p>1 Column content</p>
+			<p>1 Column content</p>
+
+		</div>
+	</li>
+    <li><a href="#">Крупная бытовая</a>
+		<div class="dropdown_2columns">
+			<p>2 Columns content</p>
+			<p>2 Column content</p>
+			<p>2 Column content</p>
+			<p>2 Column content</p>
+		</div>
+	</li>
+    <li><a href="#">Мелкая бытовая</a></li>
+    <li><a href="#">Для кухни</a></li>
+    <li><a href="#">Климат</a></li>
+	<li><a href="#">Аудио Видео Фото</a></li>
+    <li><a href="#">Компьютеры Ноутбуки</a></li>
+    <li><a href="#">Телефоны Смартфоны</a></li>
+</ul>
+
+	
+	
+<style>
+#menu li:hover .dropdown_1column,
+#menu li:hover .dropdown_2columns
+ {
+	left:-1px;top:auto;
+}
+.dropdown_1column {width: 150px;}
+.dropdown_2columns {width: 300px;}
+.dropdown_1column,
+.dropdown_2columns
+{
+	margin:4px auto;
+	position:absolute;
+	left:-999em; /* Hides the drop down */
+	text-align:left;
+	padding:10px 5px 10px 5px;
+	border:1px solid #777777;
+	border-top:none;
+
+	/* Gradient background */
+	background:#fbfbfb;
+	background: -moz-linear-gradient(top, #fbfbfb, #e1e1e1);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fbfbfb), to(#e1e1e1));
+
+	
+}
+
+
+
+
+#block-auth{
+	position:absolute;
+
+}
+#menu {
+	list-style:none;
+	width:1485px;
+	margin:30px auto 0px auto;
+	height:50px;
+	padding:0px 20px 0px 20px;
+
+	
+	// градиент
+	background: #c4c4c9;
+	background: -moz-linear-gradient(top, #c4c4c9, #b0b0b4);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#c4c4c9), to(#b0b0b4));
+	
+	// применить рамку и тень: первое значение – горизонтальное смещение; вторая – вертикальное смещение; третья – радиус размытия
+	-moz-box-shadow:inset 0px 0px 1px #f3f5f4;
+	-webkit-box-shadow:inset 0px 0px 1px #f3f5f4;
+	box-shadow:inset 0px 0px 1px #;
+}
+
+#menu li {
+	float:left;
+	display:block;
+	text-align:center;
+	position:relative;
+	padding: 1px 10px 1px 10px;
+	margin-right:14px;
+	margin-top:6px;
+	border:none;
+	width:150px;
+	
+}
+
+
+#menu li:hover {
+	border: 1px solid #777777;
+	padding: 4px 9px 4px 9px;
+	
+	/* Background color and gradients */
+	
+	background: #fbfbfb;
+	background: -moz-linear-gradient(top, #fbfbfb, #f8f8f8);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fbfbfb), to(#f8f8f8));
+	
+	
+}
+
+#menu li a {
+	font-family:Arial, Helvetica, sans-serif;
+	font:bold 16px sans-serif;
+	color: #000;
+	display:block;
+	outline:0;
+	text-decoration:none;
+}
+
+#menu li:hover a {
+	color:#161616;
+	text-shadow: 1px 1px 1px #FFFFFF;
+}
+
+#menu li .drop {
+	padding-right:21px;
+	background:url("img/drop.png") no-repeat right 8px;
+}
+#menu li:hover .drop {
+	background:url("img/drop.png") no-repeat right 7px;
+}
+
+
+</style>
+</body>
+</html>

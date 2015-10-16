@@ -1,0 +1,1747 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, time {
+    display: block;
+}
+
+html, body {
+    font-size: 100%;
+    height: 100%;
+    width: 100%;
+}
+body {
+    background: #eaeef1; 
+    font: 20px sans-serif;
+	margin:0;
+    min-width: 600px;
+}
+#wrapper {
+	
+    background: #fff;
+    margin: 0 auto;
+    max-width: 1485px;
+    position: relative;
+}
+#header {
+    background: #014d58;
+    position: relative;
+    width: 100%;
+}
+.top-bar {
+    display: inline;
+    height: 1%;
+    min-height: 16px;
+    padding: 12px 30px 11px 22px;
+    position: relative;
+}
+#nav {
+    float: left;
+    font: 20px sans-serif;
+    padding: 3px 16px 0 43px;
+}
+#nav ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+#nav li {
+    float: left;
+	list-style-type:none;
+}
+#nav ul li {
+    float: left;
+    padding: 0 8px;
+}
+#nav ul li a {	
+    color: #fff;
+    text-decoration: none;
+}
+#city-description{
+	color: #fff;
+	float: left;
+	font: 20px sans-serif;
+    margin: 1px 15px 0 0;
+    padding: 3px 15px 0 0;
+}
+#region {
+    background: rgba(0, 0, 0, 0) url("../images/sprite.png") no-repeat scroll 100% -125px;
+    color: #fff;
+    float: left;
+    font: bold 20px sans-serif;
+    margin: 1px 0 0 -22px;
+    padding: 3px 15px 0 0;
+    text-decoration: none;
+}
+#region-list{
+	margin: 32px -102px 0px;
+	float:left;
+
+}
+#region-list li a {
+    
+    color: #fff;    
+    font: bold 20px sans-serif;
+    
+    text-decoration: none;
+}
+.top-bar .region:hover {
+
+}
+
+.top-bar .user-options {
+    float: right;
+    font-family: sans-serif;
+    font-size: 20px;
+    list-style: outside none none;
+    margin: -2px -11px 0;
+        padding: 5px 15px 0px 0;
+    position: relative;
+}
+.top-bar .user-options > li {
+    float: left;
+    padding: 0 10px;
+}
+.top-bar .user-options li > a {
+    color: #fff;
+    float: left;
+    min-width: 50px;
+    text-decoration: none;
+}
+.top-bar .user-options li.user a i.ico {
+    background: rgba(0, 0, 0, 0) url("../images/sprite.png") no-repeat scroll -127px 0;
+    height: 17px;
+    margin: 5px;
+    text-indent: -999px;
+    width: 14px;
+}
+.top-bar .user-options li a i.ico {
+    display: block;
+    float: left;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.top-bar .user-options li.cart {
+    margin: -12px -19px -11px 0;
+    padding: 0;
+    position: relative;
+}
+.top-bar .user-options li.empty-small-cart > div {
+    color: #fff;
+    float: left;
+    min-width: 50px;
+    padding: 12px 28px 11px 10px;
+    position: relative;
+    text-decoration: none;
+    z-index: 4;
+}
+.top-bar .user-options li.empty-small-cart i.ico {
+    background: transparent url("../images/sprite.png") no-repeat scroll -101px 0;
+    display: inline-block;
+    float: left;
+    height: 17px;
+    margin: 5px 0 0;
+    overflow: hidden;
+    text-indent: -999px;
+    vertical-align: middle;
+    width: 19px;
+}
+.top-bar #ottBasketSmallWrap .m-sm-cart {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    display: inline-block;
+    padding: 0 5px;
+}
+.top-bar .user-options li.empty-small-cart span {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    display: block;
+    float: left;
+    padding: 0 14px 0 0;
+}
+.top-bar .user-options li.empty-small-cart span {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    display: block;
+    float: left;
+    padding: 0 14px 0 0;
+}
+.header-info {
+	background:#029ab1;
+    box-shadow: 0 0 180px rgba(0, 0, 0, 0.8) inset;
+    overflow: hidden;
+    padding: 29px 290px 20px 324px;
+    z-index: 1;
+	width: 58.6%;
+	margin-top: 10px;
+}
+.logo {
+    background: url("../images/logo-title.png") no-repeat;	
+    float: left;
+    height: 70px;
+    margin-left: -260px;
+	margin-top: -18px;
+    overflow: hidden;
+    position: relative;
+    text-indent: -9999px;
+    width: 250px;
+}
+.mini-m-h {
+    display: none;
+}
+#header .search-form {
+	opacity:1;
+    background: #1ba4b8 none repeat scroll 0 0;
+	
+    float: left;
+    height: 34px;
+    position: relative;
+    width: 93%;	
+	margin-top: -21px;
+}
+#header .search-form:hover {
+	opacity:0.8;
+	 -webkit-transform: scale(1.02);
+        -moz-transform: scale(1.02);
+		  -o-transform: scale(1.02);
+		 -ms-transform: scale(1.02);
+             transform: scale(1.02);
+}
+
+#search, .search-form, .autocompleteSearch, .autocompleteSearchCity, .autocompleteMapCity, .tp-map-city-list {
+    border-radius: 1px;
+    box-shadow: 0 0 4px #3b4b69;
+}
+form, fieldset {
+    border: 0 none !important;
+    margin: 0;
+    padding: 0;
+}
+
+
+#header .search-form fieldset {
+    position: relative;
+}
+#header .search-form fieldset {
+    overflow: hidden;
+    padding: 0 55px 0 0;
+}
+
+#header .search-form input[type="text"] {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    color: #fff;
+    cursor: pointer;
+    float: left;
+    height: 17px;
+    letter-spacing: 0.5px;
+    margin: 0;
+    padding: 10px 5% 7px 1.1%;
+    text-transform: uppercase;
+    width: 98%;
+}
+#search {
+    border: medium none;
+    outline: medium none;
+    padding-left: 11px !important;
+    padding-right: 10px !important;
+}
+input[type="text"], input[type="password"], input[type="file"], input[type="submit"], textarea {
+}
+input, select, textarea, button, a, img {
+    outline: medium none !important;
+}
+input {
+    border: medium none;
+    border-radius: 0 !important;
+    box-shadow: none;
+}
+input, textarea {
+    outline: medium none;
+}
+input, textarea, select {
+    color: #c3c3c3;
+    font: 12px/14px "PF Square Sans Probold",Arial,Helvetica,sans-serif;
+    vertical-align: middle;
+}
+input::-moz-placeholder {
+    color: #626262;
+}
+
+
+
+
+
+
+#header .search-form input[type="submit"] {
+    margin: 9px -25px 0 0;
+}
+#header .search-form input[type="submit"] {
+    background: rgba(0, 0, 0, 0) url("../images/sprite.png") no-repeat scroll 0 -4px;
+    border: medium none;
+    cursor: pointer;
+    float: right;
+    height: 17px;
+    line-height: 0;
+    margin: 9px -35px 0 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    text-indent: -9999px;
+    width: 17px;
+}
+input[type="text"], input[type="password"], input[type="file"], input[type="submit"], textarea {
+}
+input, select, textarea, button, a, img {
+    outline: medium none !important;
+}
+input {
+    border: medium none;
+    border-radius: 0 !important;
+    box-shadow: none;
+}
+input, textarea {
+    outline: medium none;
+}
+input, textarea, select {
+    color: #c3c3c3;
+    font: 12px/14px "PF Square Sans Probold",Arial,Helvetica,sans-serif;
+    vertical-align: middle;
+}
+input::-moz-placeholder {
+    color: #626262;
+}
+
+
+
+
+
+element.style {
+    display: none;
+}
+#header .search-form .btn-delete {
+    background: rgba(0, 0, 0, 0) url("../images/sprite.png") no-repeat scroll -80px -455px;
+    height: 14px;
+    overflow: hidden;
+    position: absolute;
+    right: 54px;
+    text-indent: -9999px;
+    top: 10px;
+    visibility: hidden;
+    width: 14px;
+}
+.search-form .btn-delete {
+    right: 47px !important;
+    top: 11px !important;
+    z-index: 111;
+}
+.btnSearchClose {
+    display: none;
+    visibility: visible !important;
+}
+input, select, textarea, button, a, img {
+    outline: medium none !important;
+}
+a {
+    color: #008ac4;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+#header .contacts {
+    float: right;
+    margin: 0 -262px 0 58px;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+#header .contacts .phone {
+    color: #fff;
+    cursor: default;
+    display: block;
+    font: 24px/24px "PF Square Sans Probold",Arial,Helvetica,sans-serif;
+    margin: 0 0 2px;
+    pointer-events: none;
+    text-decoration: none;
+}
+input, select, textarea, button, a, img {
+    outline: medium none !important;
+}
+a {
+    color: #008ac4;
+    text-decoration: underline;
+}
+
+
+
+
+#header .contacts .phone span {
+    color: #fff;
+    font-family: "PF Square Sans Proregular",Arial,Helvetica,sans-serif;
+}
+
+
+
+
+
+
+element.style {
+    font-size: 12px;
+}
+#header .contacts .note {
+    color: #fff;
+    font: 10px "PF Square Sans Proregular",Arial,Helvetica,sans-serif;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+.order-management {
+    background: #071739 none repeat scroll 0 0;
+    display: none;
+    padding: 16px 13px 71px;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, time {
+    display: block;
+}
+header, footer, article, section, hgroup, nav, figure, figcaption, aside {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+.order-management ul {
+    font: 12px "PF Square Sans Probold",Arial,Helvetica,sans-serif;
+    list-style: outside none none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: 225px;
+}
+ul, menu {
+    list-style-type: none;
+}
+
+
+
+
+
+
+.order-management ul li {
+    float: left;
+    padding: 0 14px 0 15px;
+}
+
+
+
+
+
+
+.order-management ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+input, select, textarea, button, a, img {
+    outline: medium none !important;
+}
+a {
+    color: #008ac4;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+.order-management ul li a span {
+    color: #008ac4;
+}
+
+
+
+
+
+
+
+#content{
+    width: 100%;
+    height: 800px;
+}
+
+#slider{
+	width: 100%;
+    height: 300px;
+	border: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#footer{
+	background: #029ab1;
+    box-shadow: 257px 0 98px 31px rgba(0, 0, 0, 0.58) inset;
+    width: 100%;
+    height: 160px;
+    margin-top: 10px;
+    clear: both;
+	
+	bottom:0px;	
+}
+
+#footer .contacts {
+    float: left;
+    margin: 54px 57px 0 36px;    
+    position: relative;
+}
+#footer .contacts .phone {
+    color: #fff;
+    cursor: default;
+    display: block;
+    font: 24px/24px "PF Square Sans Probold",Arial,Helvetica,sans-serif;
+    margin: 0 0 2px;
+    pointer-events: none;
+    text-decoration: none;
+}
+#footer .contacts .phone span {
+    color: #fff;
+    font-family: "PF Square Sans Proregular",Arial,Helvetica,sans-serif;
+}
+#footer .contacts .note {
+    color: #fff;
+    font: 10px "PF Square Sans Proregular",Arial,Helvetica,sans-serif;
+    text-transform: uppercase;
+}
+
+.footer-h{
+	color:#fff;
+}
+
+
+
+
+input, select, textarea, button, a, img {
+    outline: medium none !important;
+}
+a {
+    color: #008ac4;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+.footer-list{
+    margin: 0 60px;
+    float: left;	
+}
+.footer-list ul{
+    margin-top: 10px; 
+    margin-left: -5px; 	
+}
+.footer-list li{
+    margin-top: 5px;
+	margin-left: -30px;
+}
+.footer-list p{
+    font: bold 18px sans-serif;
+    margin-bottom: 5px;
+    color: #fff;
+	padding: 0 0 7px;
+	
+}
+.footer-list a{
+    font: 16px sans-serif;
+    text-decoration: none;
+    color: #fff;
+}
+.footer-list a:hover{
+    text-decoration: underline;
+}
+
+
+
+.col-1 {
+	margin-top:15px;
+    float: right;
+    width: 24%;
+}
+.subscription-form {
+    height: 31px;
+    padding: 20px 0 8px;
+    width: 100%;
+}
+form, fieldset {
+    border: 0 none !important;
+    margin: 0;
+    padding: 0;
+}
+.subscription-form fieldset {
+    overflow: hidden;
+    padding: 0 100px 0 0;
+}
+form, fieldset {
+    border: 0 none !important;
+    margin: 0;
+    padding: 0;
+}
+.subscription-form .text {
+    background: #1ba4b8 none repeat scroll 0 0;
+	border: 2px solid #017b8d;
+    float: left;
+    height: 31px;
+    padding: 0 3%;
+    width: 94%;
+}
+.subscription-form input[type="text"] {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    color: #e1e3e6;
+    font: 14px/14px "PF Square Sans Proregular",Arial,Helvetica,sans-serif;
+    margin: 0;
+    padding: 7px 0;
+    width: 100%;
+}
+.subscription-form input[type="submit"] {
+    background: rgba(0, 0, 0, 0) url("images/sprite.png") no-repeat scroll -200px -43px;
+    border: medium none;
+    cursor: pointer;
+    float: right;
+    height: 31px;
+    line-height: 0;
+    margin: 2px -39px 0 0;
+    overflow: hidden;
+    position: relative;
+    text-indent: -9999px;
+    width: 34px;
+}
+input[type="text"], input[type="password"], input[type="file"], input[type="submit"], textarea {
+}
+input, select, textarea, button, a, img {
+    outline: medium none !important;
+}
+input {
+    border: medium none;
+    border-radius: 0 !important;
+    box-shadow: none;
+}
+input, textarea {
+    outline: medium none;
+}
+input, textarea, select {
+    color: #c3c3c3;
+    font: 12px/14px "PF Square Sans Probold",Arial,Helvetica,sans-serif;
+    vertical-align: middle;
+}
+input::-moz-placeholder {
+    color: #626262;
+}
+#footer-share {
+    display: block;
+    margin: 15px 0;
+    position: relative;
+}
+#footer-share a.fb_share {
+    background-position: -31px 279px;
+}
+}
+input, select, textarea, button, a, img {
+    outline: medium none !important;
+}
+a {
+    color: #008ac4;
+    text-decoration: underline;
+}
+#footer-share a.vk_share {
+    background-position: -50px 160px;
+}
+#footer-share a {
+    background: rgba(0, 0, 0, 0) url("../images/sprite.png") repeat scroll 0 0;
+    display: inline-block;
+    height: 28px;
+    padding: 0 5px 0 0;
+    vertical-align: top;
+    width: 28px;
+}
+input, select, textarea, button, a, img {
+    outline: medium none !important;
+}
+a {
+    color: #008ac4;
+    text-decoration: underline;
+}
+#footer-share a.vk_share {
+    background-position: -71px 215px;
+}
+#footer-share a.plus_share {
+    background-position: -37px 247px;
+}
+
+input, select, textarea, button, a, img {
+    outline: medium none !important;
+}
+a {
+    color: #008ac4;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#contentContainer {	
+    width: 1485px;
+    height: 310px;
+    overflow: hidden;
+}
+
+#wr {
+	opacity:0.93;
+    width: 5940px;
+    position: relative;
+    left: 0px;
+	transition: left .9s ease-in-out;
+}
+#wr:hover {
+	opacity:1;
+}
+.content {
+    float: left;
+    width: 1485px;
+    height: 310px;
+    white-space: normal;
+    background-repeat: no-repeat;
+}
+#itemOne {   
+    background-image: url("../images/img1.png");
+}
+#itemTwo {    
+    background-image: url("../images/img2.png");
+}
+#itemThree {    
+    background-image: url("../images/img3.png");
+}
+#itemFour {    
+    background-image: url("../images/img4.png");
+		
+}
+
+#navLinks {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    text-align: center;
+    width: 1485px;	
+}
+
+    #navLinks ul {
+        margin: 0px;
+        padding: 0px;
+        display: inline-block;
+        margin-top: 6px;
+    }
+        #navLinks ul li {
+            float: left;
+            text-align: center;
+            margin: 10px;
+            list-style: none;
+            cursor: pointer;
+            background-color: #fff;
+            padding: 5px;
+            border-radius: 50%;
+        }
+            #navLinks ul li:hover {
+                background-color: #FFFF00;				
+            }
+            #navLinks ul li.active {
+                background-color: #333333;
+                color: #FFFFFF;
+                outline-width: 7px;
+            }
+                #navLinks ul li.active:hover {
+                    background-color: #484848;
+                    color: #FFFFFF;
+                }
+				
+				
+				
+	
+				
+				
+				
+				
+
+#block{
+	background: #029ab1;
+	height: 41px;
+	margin-top:-41px;
+	
+}
+
+
+/*             ВХОД                */
+
+#input-email-pass{
+	position:relative;
+	background: #f9fcfd;
+	height:195px;
+}
+
+#little-block{
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19); 
+	background: #029ab1;
+	height: 40px;
+	margin: 90px 0 0 457px;
+	width: 40%;
+}
+
+#block-auth p{
+	margin-left:265px;
+	padding:5px;
+}
+#auth_login{	
+    margin:16px 0 0 -32px;
+    padding: 11px;
+    width: 100%;
+    border: 1px solid #029ab1;
+	font-size:16px;
+}
+#auth_login:hover{
+	background: #fcfdfe;
+	cursor: auto;	
+}
+
+#auth_pass{	
+margin-top: 20px;
+    margin-left: -32px;
+    padding: 11px;
+    width: 100%;
+    border: 1px solid #029ab1;
+	font-size:16px;
+}
+#auth_pass:hover{
+	background: #fcfdfe;
+	cursor: auto;	
+}
+
+#LogIn{
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19); 
+	height: 40px;
+    float: right;
+    margin: 20px 8px 0px 0px;
+    width: 120px;
+    background-color: #029ab1;
+    color: #fff;
+    font-size: 16px;	
+}
+#LogIn:hover{	
+	background-color: #018a9f;   	
+}
+
+
+
+
+/* ---------------------------------------------------------------------------------- */
+
+
+
+
+
+
+.product-list {
+    padding: 18px 0 20px;
+    margin: 0 0 15px;
+    list-style: none;
+    font: 11px/14px 'Helvetica Neue',Arial,Helvetica,sans-serif;
+    color: #454545;
+    border-bottom: 1px solid #e0e1e0;
+}
+
+.product-list>li {
+    overflow: hidden;
+    padding: 18px 33px 21px 233px;
+    position: relative;
+}
+.product-list > li .col-1 {
+    float: left;
+    width: 184px;
+    margin: 0 11px 0 -211px;
+    position: relative;
+}
+div {
+    display: block;
+}
+.product-list > li .img-holder {
+    min-height: 184px;
+    padding: 3px 0 0px;
+}
+.tp-img-wrap-120-120 {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+.product-list > li .img-holder a {
+    margin: 0 auto;
+}
+.tp-img-wrap-120-120 a, .tp-a-img-wrap-120-120 {
+    display: block;
+    position: relative;
+}
+a:-webkit-any-link {
+    text-decoration: none;
+}
+input, select, textarea, button, a, img {
+    outline: none !important;
+}
+.product-list .rating-list {
+    padding: 5px 0;
+}
+.product-list .rating-list, .similar-products .rating-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+.product-list .rating-list li.active, .similar-products .rating-list li.active {
+    background-position: -102px -457px;
+}
+.product-list .rating-list li, .similar-products .rating-list li {
+    display: inline-block;
+    margin: 0 1px 0 2px;
+    background: url("http://cdn.technopark.ru/bitrix/templates/TPL.MAIN/source/makeup/images/sprite.png") no-repeat -102px -437px;
+    width: 13px;
+    height: 13px;
+}
+.product-list .rating-list li.active, .similar-products .rating-list li.active {
+    background-position: -102px -457px;
+}
+.product-list .rating-list li, .similar-products .rating-list li {
+    display: inline-block;
+    margin: 0 1px 0 2px;
+    background: url("http://cdn.technopark.ru/bitrix/templates/TPL.MAIN/source/makeup/images/sprite.png") no-repeat -102px -437px;
+    width: 13px;
+    height: 13px;
+}
+.product-list .rating-list li.active, .similar-products .rating-list li.active {
+    background-position: -102px -457px;
+}
+.product-list .rating-list li, .similar-products .rating-list li {
+    display: inline-block;
+    margin: 0 1px 0 2px;
+    background: url("http://cdn.technopark.ru/bitrix/templates/TPL.MAIN/source/makeup/images/sprite.png") no-repeat -102px -437px;
+    width: 13px;
+    height: 13px;
+}
+div.desc-rating, div.desc-rating span {
+    color: #D2D2D2;
+}
+div.desc-rating {
+    text-align: center;
+    font: 13px/18px 'PF Square Sans Proregular',Arial,Helvetica,sans-serif;
+}
+div.desc-rating a {
+    text-decoration: none;
+}
+a:-webkit-any-link {
+    text-decoration: none;
+}
+input, select, textarea, button, a, img {
+    outline: none !important;
+}
+a {
+    color: #008ac4;
+    text-decoration: underline;
+}
+.product-section #tabset li a span, div.desc-rating span.active {
+    color: #008ac4;
+    font-family: 'PF Square Sans Probold',Arial,Helvetica,sans-serif;
+    display: inline-block;
+    margin: 0 0 -1px;
+    position: relative;
+}
+*+ html .product-section #tabset li a span, div.desc-rating span {
+    display: inline;
+}
+div.desc-rating, div.desc-rating span {
+    color: #D2D2D2;
+}
+div.desc-rating {
+    text-align: center;
+    font: 13px/18px 'PF Square Sans Proregregular',Arial,Helvetica,sans-serif;
+}
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main-nav {
+    background: #c5cdc9 none repeat scroll 0 0;
+    margin: 0 -30px;
+    outline: medium none;
+    position: relative;
+    z-index: 37;
+}
+.main-nav > ul {
+    display: table;
+    outline: medium none;
+    padding: 0;
+}
+.main-nav > ul {
+    font: 13px/14px "PF Square Sans Medium",Arial,Helvetica,sans-serif;
+    list-style: outside none none;
+    margin: 0;
+    padding: 11px 0;
+    position: relative;
+    width: 100%;
+}
+.main-nav > ul > li > a {
+    display: block;
+    height: 38px;
+    margin: 0 0 0 -3px;
+    padding: 8px 0;
+    vertical-align: middle;
+}
+.main-nav > ul > li > a {
+    position: relative;
+    z-index: 5;
+}
+.main-nav > ul > li a {
+    color: #000;
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+    padding: 11px 0;
+    text-decoration: none;
+}
+.main-nav > ul > li > a {
+    display: block;
+    height: 38px;
+    margin: 0 0 0 -3px;
+    padding: 8px 0;
+    vertical-align: middle;
+}
+.main-nav > ul > li > a {
+    position: relative;
+    z-index: 5;
+}
+.main-nav > ul > li a {
+    color: #000;
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+    padding: 11px 0;
+    text-decoration: none;
+}
+.m-m-s {
+    display: inline-block;
+}
+.m-m-s {
+    display: inline-block;
+}
+.main-nav ul > li a span.holder span {
+    display: block;
+}
+.main-nav ul > li a span {
+    display: inline;
+}
+.main-nav > ul > li a div.vline {
+    background: transparent url("http://cdn.technopark.ru/bitrix/templates/TPL.MAIN/source/makeup/images/sprite.png") no-repeat scroll -377px -1041px;
+    display: inline-block;
+    height: 38px;
+    position: absolute;
+    right: 0;
+    vertical-align: middle;
+    width: 4px;
+}
+
+.main-nav ul > li {
+    display: table-cell;
+    float: none;
+    margin: 0;
+    outline: medium none;
+    padding: 0;
+    vertical-align: middle;
+}
+.main-nav > ul > li {
+    float: left;
+    margin: -11px 0;
+    padding: 0 30px;
+    text-align: center;
+}
+.main-nav ul > li + li a i.m-ico::before {
+    content: "B";
+}
+.main-nav ul > li a i.m-ico::before {
+    content: "A";
+}
+:root .main-nav ul > li a i {
+}
+.main-nav ul > li + li a i {
+    display: inline-block;
+    height: 38px;
+    margin: 0 0 0 6px;
+    text-indent: -1px;
+    vertical-align: middle;
+    width: 21px;
+}
+.main-nav ul > li a i {
+    text-shadow: 0 0 0 #009eca;
+}
+.main-nav ul > li a i {
+}
+.main-nav > ul > li a .holder {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: bold;
+    margin: 0 4px 0 10px;
+    vertical-align: middle;
+}
+.main-nav > ul > li a .holder {
+    display: inline-block;
+    text-align: left;
+}
+.main-nav ul > li a span {
+    display: inline;
+}.main-nav ul > li + li a span.holder span {
+    display: inline;
+}
+.main-nav ul > li a span.holder span {
+    display: block;
+}
+.main-nav ul > li a span {
+    display: inline;
+}
+.main-nav ul > li + li a span.holder span {
+    display: inline;
+}
+.main-nav ul > li a span.holder span {
+    display: block;
+}
+.main-nav ul > li a span {
+    display: inline;
+}
+.main-nav > ul > li a div.vline {
+    background: transparent url("http://cdn.technopark.ru/bitrix/templates/TPL.MAIN/source/makeup/images/sprite.png") no-repeat scroll -377px -1041px;
+    display: inline-block;
+    height: 38px;
+    position: absolute;
+    right: 0;
+    vertical-align: middle;
+    width: 4px;
+}
+.main-nav > ul > li {
+    text-align: center;
+}
+.main-nav .drop {
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+    padding: 29px 0 30px;
+    position: absolute;
+    right: 0;
+    text-align: left;
+    top: 53px;
+    visibility: hidden;
+    width: 100%;
+}
+.main-nav .drop.custom-img .holder {
+    min-height: 482px;
+}
+.main-nav .drop.noline .holder {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+}
+.main-nav .drop .holder {
+    background: rgba(0, 0, 0, 0) url("http://cdn.technopark.ru/bitrix/templates/TPL.MAIN/source/makeup/images/sep-grey.png") repeat-y scroll 69.6% 0;
+    min-height: 331px;
+    padding: 0 0 0 30px;
+}
+.main-nav .drop .col-1 {
+    float: left;
+    width: 69%;
+}
+.main-nav .drop .computers {
+    color: #333;
+    font: 26px "PF Square Sans Proregular",Arial,Helvetica,sans-serif;
+    margin: -2px 0 4px -1px;
+    min-height: 53px;
+    padding: 10px 10px 0 0;
+    position: relative;
+}
+.main-nav .box {
+    overflow: hidden;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, time {
+    display: block;
+}
+header, footer, article, section, hgroup, nav, figure, figcaption, aside {
+    display: block;
+}
+.main-nav .box .col {
+    float: left;
+    padding: 0 3% 0 0;
+    width: 30.3%;
+}
+.main-nav .box ul {
+    font: 14px/14px "PF Square Sans Proregular",Arial,Helvetica,sans-serif;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+ul, menu {
+    list-style-type: none;
+}
+.main-nav .box ul li {
+    border-bottom: 1px solid #e1e1e1;
+    display: list-item;
+    padding: 7px 0;
+}
+.main-nav ul > li {
+    display: table-cell;
+    float: none;
+    margin: 0;
+    outline: medium none;
+    padding: 0;
+    vertical-align: middle;
+}
+.main-nav .box ul li a {
+    color: #616161;
+    display: inline;
+    padding: 0;
+}
+.main-nav > ul > li a {
+    color: #000;
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+    padding: 11px 0;
+    text-decoration: none;
+}
+input, select, textarea, button, a, img {
+    outline: medium none !important;
+}
+a {
+    color: #008ac4;
+    text-decoration: underline;
+}
+.main-nav .box ul li a {
+    color: #616161;
+    display: inline;
+    padding: 0;
+}
+.main-nav > ul > li a {
+    color: #000;
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+    padding: 11px 0;
+    text-decoration: none;
+}
+input, select, textarea, button, a, img {
+    outline: medium none !important;
+}
+a {
+    color: #008ac4;
+    text-decoration: underline;
+}
+.main-nav .box ul li a {
+    color: #616161;
+    display: inline;
+    padding: 0;
+}
+.main-nav > ul > li a {
+    color: #000;
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+    padding: 11px 0;
+    text-decoration: none;
+}
+input, select, textarea, button, a, img {
+    outline: medium none !important;
+}
+a {
+    color: #008ac4;
+    text-decoration: underline;
+}
+.main-nav .box ul li a {
+    color: #616161;
+    display: inline;
+    padding: 0;
+}
+.main-nav > ul > li a {
+    color: #000;
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+    padding: 11px 0;
+    text-decoration: none;
+}
+input, select, textarea, button, a, img {
+    outline: medium none !important;
+}
+a {
+    color: #008ac4;
+    text-decoration: underline;
+}
+.main-nav .box ul li a {
+    color: #616161;
+    display: inline;
+    padding: 0;
+}
+.main-nav > ul > li a {
+    color: #000;
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+    padding: 11px 0;
+    text-decoration: none;
+}
+input, select, textarea, button, a, img {
+    outline: medium none !important;
+}
+a {
+    color: #008ac4;
+    text-decoration: underline;
+}
+.main-nav .box ul li a {
+    color: #616161;
+    display: inline;
+    padding: 0;
+}
+.main-nav > ul > li a {
+    color: #000;
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+    padding: 11px 0;
+    text-decoration: none;
+}
+input, select, textarea, button, a, img {
+    outline: medium none !important;
+}
+a {
+    color: #008ac4;
+    text-decoration: underline;
+}
+.main-nav .box ul {
+    font: 14px/14px "PF Square Sans Proregular",Arial,Helvetica,sans-serif;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+ul, menu {
+    list-style-type: none;
+}
+.main-nav .box ul li {
+    border-bottom: 1px solid #e1e1e1;
+    display: list-item;
+    padding: 7px 0;
+}
+.main-nav ul > li {
+    display: table-cell;
+    float: none;
+    margin: 0;
+    outline: medium none;
+    padding: 0;
+    vertical-align: middle;
+}
+.main-nav .box ul li a {
+    color: #616161;
+    display: inline;
+    padding: 0;
+}
+.main-nav > ul > li a {
+    color: #000;
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+    padding: 11px 0;
+    text-decoration: none;
+}
+input, select, textarea, button, a, img {
+    outline: medium none !important;
+}
+a {
+    color: #008ac4;
+    text-decoration: underline;
+}
+.main-nav .box ul li a {
+    color: #616161;
+    display: inline;
+    padding: 0;
+}
+.main-nav > ul > li a {
+    color: #000;
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+    padding: 11px 0;
+    text-decoration: none;
+}
+input, select, textarea, button, a, img {
+    outline: medium none !important;
+}
+a {
+    color: #008ac4;
+    text-decoration: underline;
+}
+.main-nav .drop .col-2.promo.pos-bottom .col-2-head {
+    margin: 0;
+    position: relative;
+}
+.main-nav .drop .col-2.promo .col-2-head {
+    color: #3b3b3b;
+    font: 16px "PF Square Sans Proregular",Arial,Helvetica,sans-serif;
+    margin: 6px 0 5px;
+    min-height: auto;
+    position: relative;
+    text-align: center;
+}
+.main-nav .drop .col-2.pos-bottom .col-2-head {
+    left: 0;
+    margin: 0 0 5px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.main-nav .drop .col-2 .col-2-head {
+    color: #3b3b3b;
+    font: 16px "PF Square Sans Proregular",Arial,Helvetica,sans-serif;
+    margin: 6px 0 5px;
+    min-height: 40px;
+    position: relative;
+    text-align: center;
+}
+.main-nav .drop .col-2.promo.pos-bottom .col-2-head a {
+    color: #333;
+    height: auto;
+    overflow: hidden;
+}
+.main-nav .drop .col-2.pos-bottom .col-2-head a {
+    color: #333;
+    height: 42px;
+    overflow: hidden;
+}
+.main-nav .col-2.pos-bottom a {
+    padding: 0;
+}
+.main-nav > ul > li a {
+    color: #000;
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+    padding: 11px 0;
+    text-decoration: none;
+}
+input, select, textarea, button, a, img {
+    outline: medium none !important;
+}
+a {
+    color: #008ac4;
+    text-decoration: underline;
+}
+.main-nav .drop .col-2.pos-bottom figure {
+    margin-bottom: 0;
+    padding: 0;
+    position: relative;
+}
+.main-nav .drop figure {
+    margin: 0 0 16px;
+    padding: 0 45px;
+    text-align: center;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, time {
+    display: block;
+}
+figure {
+    margin: 0;
+    padding: 0;
+}
+header, footer, article, section, hgroup, nav, figure, figcaption, aside {
+    display: block;
+}
+.main-nav .col-2.pos-bottom a {
+    padding: 0;
+}
+.main-nav > ul > li a {
+    color: #000;
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+    padding: 11px 0;
+    text-decoration: none;
+}
+input, select, textarea, button, a, img {
+    outline: medium none !important;
+}
+a {
+    color: #008ac4;
+    text-decoration: underline;
+}
+element.style {
+    opacity: 1;
+}
+.main-nav .drop .col-2.pos-bottom figure img {
+    margin-bottom: 0;
+    margin-right: 0;
+}
+.main-nav .drop figure img {
+    display: block;
+    margin: 0 auto 17px;
+}
+input, select, textarea, button, a, img {
+    outline: medium none !important;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+img {
+    border-style: none;
+}
+element.style {
+    opacity: 1;
+}
+.main-nav .drop .col-2.pos-bottom figure img {
+    margin-bottom: 0;
+    margin-right: 0;
+}
+.main-nav .drop figure img {
+    display: block;
+    margin: 0 auto 17px;
+}
+input, select, textarea, button, a, img {
+    outline: medium none !important;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+img {
+    border-style: none;
+}
+.main-nav .col-2.pos-bottom a {
+    padding: 0;
+}
+.main-nav > ul > li a {
+    color: #000;
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+    padding: 11px 0;
+    text-decoration: none;
+}
+.btn-blue, .noactive-btn-blue {
+    background: #008ac4 none repeat scroll 0 0;
+    color: #fff;
+    font: 15px "PF Square Sans Probold",Arial,Helvetica,sans-serif;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in 0s;
+}
+input, select, textarea, button, a, img {
+    outline: medium none !important;
+}
+a {
+    color: #008ac4;
+    text-decoration: underline;
+}
+#main {
+    min-height: 461px;
+}
+#main {
+    padding: 0 30px 30px;
+}
+
+
+#copyright{
+	background: #014d58;
+	color: #80b5bd;
+    width: 100%;
+    height: 41px;
+    margin-top: -20px;
+    padding-top: 1px;
+    text-align: center;
+    font: 16px sans-serif;
+}
+
+#city-list li{
+	position: relative;
+	
+}
+
+
+/* ------------------------ MENU -----------------------------*/
+#menu li:hover .dropdown_1column,
+#menu li:hover .dropdown_2columns
+ {
+	left:-1px;top:auto;
+
+}
+.dropdown_1column {width: 800%;}
+.dropdown_2columns {width: 800%;}
+.dropdown_1column,
+.dropdown_2columns
+{
+	margin:4px auto;
+	position:absolute;
+	left:-999em; /* Hides the drop down */
+	text-align:left;
+	padding:10px 5px 10px 5px;
+	border:1px solid #777777;
+	border-top:none;
+
+	/* Gradient background */
+	background:#fbfbfb;
+	background: -moz-linear-gradient(top, #fbfbfb, #e1e1e1);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fbfbfb), to(#e1e1e1));
+
+	
+}
+
+
+
+
+#block-auth{
+	position:absolute;
+
+}
+#menu {
+	width:100%;
+	height:53px;
+	padding:0;
+	margin:0;
+
+	
+	// градиент
+	background: #c4c4c9;
+	background: -moz-linear-gradient(top, #c4c4c9, #b0b0b4);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#c4c4c9), to(#b0b0b4));
+	
+	// применить рамку и тень: первое значение – горизонтальное смещение; вторая – вертикальное смещение; третья – радиус размытия
+	-moz-box-shadow:inset 0px 0px 1px #f3f5f4;
+	-webkit-box-shadow:inset 0px 0px 1px #f3f5f4;
+	box-shadow:inset 0px 0px 1px #;
+	
+}
+
+#menu li {
+	float:left;
+	display:block;
+	text-align:center;
+	position:relative;
+	padding: 1px 10px 1px 10px;
+	margin-right:14px;
+	margin-top:6px;
+	border:none;
+	width:150px;
+
+}
+
+
+#menu li:hover {
+	border: 1px solid #777777;
+	padding: 4px 9px 4px 9px;
+	
+	/* Background color and gradients */
+	
+	background: #fbfbfb;
+	background: -moz-linear-gradient(top, #fbfbfb, #f8f8f8);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fbfbfb), to(#f8f8f8));
+	z-index:1;
+	
+}
+
+#menu li a {
+	font-family:Arial, Helvetica, sans-serif;
+	font:bold 16px sans-serif;
+	color: #000;
+	display:block;
+	outline:0;
+	text-decoration:none;
+
+}
+
+#menu li:hover a {
+	color:#161616;
+	text-shadow: 1px 1px 1px #FFFFFF;
+
+}
+
+#menu li .drop {
+	padding-right:21px;
+	background:url("img/drop.png") no-repeat right 8px;
+	
+}
+#menu li:hover .drop {
+	background:url("img/drop.png") no-repeat right 7px;
+
+}
