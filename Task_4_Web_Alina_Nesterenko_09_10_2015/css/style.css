@@ -131,7 +131,6 @@ body {
     padding: 12px 28px 11px 10px;
     position: relative;
     text-decoration: none;
-    z-index: 4;
 }
 .top-bar .user-options li.empty-small-cart i.ico {
     background: transparent url("../images/sprite.png") no-repeat scroll -101px 0;
@@ -166,16 +165,15 @@ body {
     box-shadow: 0 0 180px rgba(0, 0, 0, 0.8) inset;
     overflow: hidden;
     padding: 29px 290px 20px 324px;
-    z-index: 1;
 	width: 58.6%;
 	margin-top: 10px;
 }
 .logo {
-    background: url("../images/logo-title.png") no-repeat;	
+    background: url("../images/logo.png") no-repeat;	
     float: left;
     height: 70px;
     margin-left: -260px;
-	margin-top: -18px;
+	margin-top: -8px;
     overflow: hidden;
     position: relative;
     text-indent: -9999px;
@@ -192,7 +190,6 @@ body {
     height: 34px;
     position: relative;
     width: 93%;	
-	margin-top: -21px;
 }
 #header .search-form:hover {
 	opacity:0.8;
@@ -328,7 +325,6 @@ element.style {
 .search-form .btn-delete {
     right: 47px !important;
     top: 11px !important;
-    z-index: 111;
 }
 .btnSearchClose {
     display: none;
@@ -671,7 +667,7 @@ input::-moz-placeholder {
 }
 #footer-share {
     display: block;
-    margin: 15px 0;
+    margin: 5px 0;
     position: relative;
 }
 #footer-share a.fb_share {
@@ -1047,7 +1043,6 @@ div.desc-rating {
     margin: 0 -30px;
     outline: medium none;
     position: relative;
-    z-index: 37;
 }
 .main-nav > ul {
     display: table;
@@ -1071,7 +1066,6 @@ div.desc-rating {
 }
 .main-nav > ul > li > a {
     position: relative;
-    z-index: 5;
 }
 .main-nav > ul > li a {
     color: #000;
@@ -1090,7 +1084,6 @@ div.desc-rating {
 }
 .main-nav > ul > li > a {
     position: relative;
-    z-index: 5;
 }
 .main-nav > ul > li a {
     color: #000;
@@ -1470,7 +1463,6 @@ a {
     position: absolute;
     top: 0;
     width: 100%;
-    z-index: 1;
 }
 .main-nav .drop .col-2 .col-2-head {
     color: #3b3b3b;
@@ -1744,4 +1736,96 @@ a {
 #menu li:hover .drop {
 	background:url("img/drop.png") no-repeat right 7px;
 
+}
+
+
+
+/*     menu popup */
+
+/* Базовые стили слоя затемнения и модального окна  */
+.overlay {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+/* фон затемнения */
+    background-color: rgba(0, 0, 0, 0.65);
+    position: fixed; /* фиксированное поцизионирование */
+    cursor: default; /* тип курсара */
+}
+/* активируем слой затемнения */
+.overlay:target {
+    display: block;
+}
+/* стили модального окна */
+.popup {
+    top: -100%;
+    right: 0;
+    left: 50%;
+    font-size: 14px;
+    z-index: 20;
+    margin: 0;
+    width: 85%;
+    min-width: 320px;
+    max-width: 600px;
+/* фиксированное позиционирование, окно стабильно при прокрутке */
+    position: fixed;
+    padding: 15px;
+    border: 1px solid #383838;
+    background: #fefefe;
+
+/* внешняя тень */
+    -webkit-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+    -moz-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+    -ms-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+    box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+    -webkit-transform: translate(-50%, -500%);
+    -ms-transform: translate(-50%, -500%);
+    -o-transform: translate(-50%, -500%);
+    transform: translate(-50%, -500%);
+	
+    
+}
+/* активируем модальный блок */
+.overlay:target+.popup {
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    top: 20%;
+}
+
+/* формируем кнопку закрытия */
+.close {
+    top: -10px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    padding: 0;
+    border: 2px solid #ccc;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border-radius: 15px;
+    background-color: rgba(61, 61, 61, 0.8);
+    -webkit-box-shadow: 0px 0px 10px #000;
+    -moz-box-shadow: 0px 0px 10px #000;
+    box-shadow: 0px 0px 10px #000;
+    text-align: center;
+    text-decoration: none;
+    font: 13px/20px 'Tahoma', Arial, sans-serif;
+    font-weight: bold;    
+}
+.close:before {
+    color: rgba(255, 255, 255, 0.9);
+    content: "X";
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
+    font-size: 12px;
+}
+.close:hover {
+    background-color: rgba(252, 20, 0, 0.8);    
 }
