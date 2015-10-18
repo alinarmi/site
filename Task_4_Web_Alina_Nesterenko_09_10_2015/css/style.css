@@ -104,11 +104,12 @@ body {
     float: left;
     min-width: 50px;
     text-decoration: none;
+	    margin-left: -24px;
 }
 .top-bar .user-options li.user a i.ico {
     background: rgba(0, 0, 0, 0) url("../images/sprite.png") no-repeat scroll -127px 0;
     height: 17px;
-    margin: 5px;
+    margin: 3px;
     text-indent: -999px;
     width: 14px;
 }
@@ -137,7 +138,7 @@ body {
     display: inline-block;
     float: left;
     height: 17px;
-    margin: 5px 0 0;
+    margin: 3px 0 0;
     overflow: hidden;
     text-indent: -999px;
     vertical-align: middle;
@@ -183,7 +184,7 @@ body {
     display: none;
 }
 #header .search-form {
-	opacity:1;
+	opacity:0.8;
     background: #1ba4b8 none repeat scroll 0 0;
 	
     float: left;
@@ -192,7 +193,7 @@ body {
     width: 93%;	
 }
 #header .search-form:hover {
-	opacity:0.8;
+	opacity:1;
 	 -webkit-transform: scale(1.02);
         -moz-transform: scale(1.02);
 		  -o-transform: scale(1.02);
@@ -238,32 +239,6 @@ form, fieldset {
     padding-left: 11px !important;
     padding-right: 10px !important;
 }
-input[type="text"], input[type="password"], input[type="file"], input[type="submit"], textarea {
-}
-input, select, textarea, button, a, img {
-    outline: medium none !important;
-}
-input {
-    border: medium none;
-    border-radius: 0 !important;
-    box-shadow: none;
-}
-input, textarea {
-    outline: medium none;
-}
-input, textarea, select {
-    color: #c3c3c3;
-    font: 12px/14px "PF Square Sans Probold",Arial,Helvetica,sans-serif;
-    vertical-align: middle;
-}
-input::-moz-placeholder {
-    color: #626262;
-}
-
-
-
-
-
 
 #header .search-form input[type="submit"] {
     margin: 9px -25px 0 0;
@@ -296,14 +271,16 @@ input, textarea {
     outline: medium none;
 }
 input, textarea, select {
-    color: #c3c3c3;
+    color: #fefefe;
     font: 12px/14px "PF Square Sans Probold",Arial,Helvetica,sans-serif;
     vertical-align: middle;
 }
 input::-moz-placeholder {
-    color: #626262;
+    color: #fefefe;
 }
-
+input::-webkit-input-placeholder {
+    color: #fefefe;
+}
 
 
 
@@ -624,14 +601,14 @@ form, fieldset {
 .subscription-form input[type="text"] {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
     border: medium none;
-    color: #e1e3e6;
+        color: #fefefe;
     font: 14px/14px "PF Square Sans Proregular",Arial,Helvetica,sans-serif;
     margin: 0;
     padding: 7px 0;
     width: 100%;
 }
 .subscription-form input[type="submit"] {
-    background: rgba(0, 0, 0, 0) url("images/sprite.png") no-repeat scroll -200px -43px;
+    background: url("../images/send.png");
     border: medium none;
     cursor: pointer;
     float: right;
@@ -1633,16 +1610,25 @@ a {
 
 /* ------------------------ MENU -----------------------------*/
 #menu li:hover .dropdown_1column,
-#menu li:hover .dropdown_2columns
+#menu li:hover .dropdown_2columns,
+#menu li:hover .dropdown_3columns,
+#menu li:hover .dropdown_4columns,
+#menu li:hover .dropdown_5columns
  {
 	left:-1px;top:auto;
 
 }
-.dropdown_1column {width: 800%;}
-.dropdown_2columns {width: 800%;}
+.dropdown_1column {width: 1473px; height:350px;}
+.dropdown_2columns {width: 1288px; height:350px;}
+.dropdown_3columns {width: 1288px; height:350px;}
+.dropdown_4columns {width: 1288px; height:350px;}
+.dropdown_5columns {width: 1288px; height:350px;}
 
 .dropdown_1column,
-.dropdown_2columns
+.dropdown_2columns,
+.dropdown_3columns,
+.dropdown_4columns,
+.dropdown_5columns
 {
 	margin:4px auto;
 	position:absolute;
@@ -1684,6 +1670,10 @@ a {
 	box-shadow:inset 0px 0px 1px #;
 	
 }
+.dropdown_1column p:hover{
+	background-color:#c6d9e0;
+	cursor: pointer;
+}
 
 #menu li {
 	float:left;
@@ -1695,6 +1685,8 @@ a {
 	margin-top:6px;
 	border:none;
 	width:150px;
+	border-right: 1px solid #029ab1;
+	top: 8%;
 
 }
 
@@ -1770,13 +1762,9 @@ a {
     font-size: 14px;
     z-index: 20;
     margin: 0;
-    width: 85%;
-    min-width: 320px;
-    max-width: 600px;
+    width: 650px;
 /* фиксированное позиционирование, окно стабильно при прокрутке */
     position: fixed;
-    padding: 15px;
-    border: 1px solid #383838;
     
 
 /* внешняя тень */
@@ -1797,13 +1785,13 @@ a {
     -ms-transform: translate(-50%, 0);
     -o-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
-    top: 20%;
+    top: 5%;
 }
 
 /* формируем кнопку закрытия */
 .close {
-    top: -10px;
-    right: -10px;
+    top: 26px;
+    right: 6px;
     width: 20px;
     height: 20px;
     position: absolute;
@@ -1815,9 +1803,7 @@ a {
     -o-border-radius: 15px;
     border-radius: 15px;
     background-color: rgba(61, 61, 61, 0.8);
-    -webkit-box-shadow: 0px 0px 10px #000;
-    -moz-box-shadow: 0px 0px 10px #000;
-    box-shadow: 0px 0px 10px #000;
+   
     text-align: center;
     text-decoration: none;
     font: 13px/20px 'Tahoma', Arial, sans-serif;
@@ -2072,7 +2058,7 @@ right:20px;
 	text-align: left;
 	text-decoration: none;
 	
-	width: 800px;
+	width: 570px;
 	height: 600px;
 	position: absolute;
 	left: 50%;
@@ -2081,7 +2067,7 @@ right:20px;
 }
 
 .reg-form{
-	width: 800px;
+	width: 570px;
 	margin: 0 auto;
 	position: relative;
 	z-index:5;
@@ -2118,12 +2104,12 @@ right:20px;
 }
 
 .reg-form .reg-content {
-	padding: 0 30px 25px 30px;
+	padding: 0 60px 38px 79px;
 }
 
 /* Input field */
 .reg-form .reg-content .input {
-	width: 188px;
+	width: 360px;
 	padding: 15px 25px;
 	
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -2138,12 +2124,11 @@ right:20px;
 	box-shadow: inset 0 1px 3px rgba(0,0,0,0.50);
 	-moz-box-shadow: inset 0 1px 3px rgba(0,0,0,0.50);
 	-webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.50);
+	
+	margin-top: 10px;
 }
 
 /* Second input field */
-.reg-form .reg-content .password, .reg-form .reg-content .pass-icon {
-	margin-top: 25px;
-}
 
 .reg-form .reg-content .input:hover {
 	background: #dfe9ec;
@@ -2195,7 +2180,8 @@ right:20px;
 	border: 1px solid #46b3d3;
 	border-radius: 5px;
 	cursor: pointer;
-	
+	    margin-right: 127px;
+		
 	box-shadow: inset 0 0 2px rgba(256,256,256,0.75);
 	-moz-box-shadow: inset 0 0 2px rgba(256,256,256,0.75);
 	-webkit-box-shadow: inset 0 0 2px rgba(256,256,256,0.75);
@@ -2221,23 +2207,6 @@ right:20px;
 	-webkit-box-shadow: inset 0 1px 6px rgba(256,256,256,0.75);
 }
 
-/* Register button */
-.reg-form .reg-footer{
-	display: block;
-	float: right;
-	padding: 10px 5px 10px 0;
-	margin-right: 20px;
-	
-	background: none;
-	border: none;
-	cursor: pointer;
-	
-	font-family: 'Bree Serif', serif;
-	font-weight: 300;
-	font-size: 18px;
-	color: #414848;
-	text-shadow: 0px 1px 0 rgba(256,256,256,0.5);
-}
 
 .reg-form .reg-footer:hover {
 	color: #e57d00;
@@ -2246,4 +2215,24 @@ right:20px;
 .reg-form .reg-footer:focus {
 	position: relative;
 	bottom: -1px;
+}
+
+
+/* --------------------------------------------------------*/
+#video-block{	
+	margin-top:10px;
+	margin-left:15%;
+}
+
+.region-h{
+	padding-top: 15px;
+	font-size: 20px;
+    margin-left: 248px;
+}
+.column-1, .column-2, .column-3{
+	font-size: 16px;
+	float:left;
+}
+.column-1 li, .column-2 li, .column-3 li{
+	padding-top:3px;
 }
