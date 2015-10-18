@@ -1613,22 +1613,31 @@ a {
 #menu li:hover .dropdown_2columns,
 #menu li:hover .dropdown_3columns,
 #menu li:hover .dropdown_4columns,
-#menu li:hover .dropdown_5columns
+#menu li:hover .dropdown_5columns,
+#menu li:hover .dropdown_6columns,
+#menu li:hover .dropdown_7columns,
+#menu li:hover .dropdown_8columns
  {
 	left:-1px;top:auto;
 
 }
 .dropdown_1column {width: 1473px; height:350px;}
 .dropdown_2columns {width: 1288px; height:350px;}
-.dropdown_3columns {width: 1288px; height:350px;}
-.dropdown_4columns {width: 1288px; height:350px;}
-.dropdown_5columns {width: 1288px; height:350px;}
+.dropdown_3columns {width: 1103px; height:350px;}
+.dropdown_4columns {width: 918px; height:350px;}
+.dropdown_5columns {width: 734px; height:350px;}
+.dropdown_6columns {width: 548px; height:350px;}
+.dropdown_7columns {width: 363px; height:350px;}
+.dropdown_8columns {width: 178px; height:350px;}
 
 .dropdown_1column,
 .dropdown_2columns,
 .dropdown_3columns,
 .dropdown_4columns,
-.dropdown_5columns
+.dropdown_5columns,
+.dropdown_6columns,
+.dropdown_7columns,
+.dropdown_8columns
 {
 	margin:4px auto;
 	position:absolute;
@@ -1673,6 +1682,40 @@ a {
 .dropdown_1column p:hover{
 	background-color:#c6d9e0;
 	cursor: pointer;
+}
+.dropdown1{
+	float:left;
+	margin:10px 37px 10px 20px;
+}
+#dropdown1-img{
+	margin-right:0px;
+	margin-top:80px;
+}
+.dropdown2{
+	float:left;
+	margin:10px 37px 10px 20px;
+}
+.dropdown_2columns p:hover, 
+.dropdown_3columns p:hover, 
+.dropdown_4columns p:hover, 
+.dropdown_5columns p:hover,
+.dropdown_6columns p:hover, 
+.dropdown_7columns p:hover, 
+.dropdown_8columns p:hover{
+	background-color:#c6d9e0;
+	cursor: pointer;
+}
+#dropdown2-img{
+	margin-right:0px;
+	margin-top:30px;
+}
+
+#dropdown3-img{
+	margin-right:0px;
+	margin-top:30px;
+	width: 400px;
+	height:310px;
+	border:1px solid black;
 }
 
 #menu li {
