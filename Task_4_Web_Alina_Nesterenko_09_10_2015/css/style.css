@@ -1695,6 +1695,7 @@ a {
 	float:left;
 	margin:10px 37px 10px 20px;
 }
+
 .dropdown_2columns p:hover, 
 .dropdown_3columns p:hover, 
 .dropdown_4columns p:hover, 
@@ -1729,8 +1730,7 @@ a {
 	border:none;
 	width:150px;
 	border-right: 1px solid #029ab1;
-	top: 8%;
-
+	top: 8%;	
 }
 
 
@@ -1796,6 +1796,11 @@ a {
 }
 #city{
 	background: #fefefe;
+}
+#cart{
+	background: url("../images/cart.jpg") no-repeat;
+	width:615px;
+	height:300px;
 }
 /* стили модального окна */
 .popup {
