@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+		
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/close-tab.js"></script>	
+	<script src="js/popup.js"></script>	
+	
+	<link href="css/style.css" rel="stylesheet" type="text/css" /> 
+	<link href="icon.ico" rel="shortcut icon" type="image/x-icon"> 
+	
+    </head>
+    <body>
+        <script type="text/javascript">
+ /**
+            * Функция вставляет html код в элемент с id равным element_id
+            * @author ox2.ru дизайн студия
+            **/
+            function loadContent(element_id) {
+                 //Если элемент с id-шником element_id существует 
+                if (document.getElementById(element_id)) {  
+                    document.getElementById(element_id).innerHTML = 
+                        "<div id=\"properties-list\">abc</div><div id=\"goods-list\"><p>Мобильные телефоны </p><div class=\"goods\"><div><img class=\"goods-img\" src=\"images/1.png\" alt=\"Мобильный телефон GSmart Akta A4 Dark Blue\" title=\"Мобильный телефон GSmart Akta A4 Dark Blue\"></div><div id=\"description\"><div id=\"goods-title\"><p>Мобильный телефон Highscreen Pure F Black</p></div><div id=\"goods-descr\"><pre></div>";
+                }
+            }
+        </script>
+	<style>
+		#goods-list{
+			border:1px solid black;
+		}
+	</style>
+        <a href="javascript:void(0)" onclick="loadContent('block_id')">Вставить html-код в div</a><br/><br/>
+        <div id="block_id">
+            Сюда будет вставлен контент
+        </div>
+
+    </body>
+</html>

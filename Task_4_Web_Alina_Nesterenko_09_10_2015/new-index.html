@@ -6,7 +6,7 @@
 		
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/close-tab.js"></script>	
-	<script src="js/script-slider.js"></script>	
+	<script src="js/popup.js"></script>	
 	
 	<link href="css/style.css" rel="stylesheet" type="text/css" /> 
 	<link href="icon.ico" rel="shortcut icon" type="image/x-icon"> 
@@ -131,11 +131,48 @@
     </div>
 
     <div class="log-content">
-		<input name="username" type="text" class="input username" value="Логин" onfocus="this.value=''" />
+		<input name="username" type="email" class="input username" value="Логин" onfocus="this.value=''" />
 		<input name="password" type="password" class="input password" value="Пароль" onfocus="this.value=''" />
     </div>
 
     <div class="log-footer">
+		<input type="submit" name="submit" value="ВОЙТИ" class="button" />
+		<a href="#win3" class="name" id="reg-link">Регистрация</a>    <!--      -->	
+    </div>
+
+</form>
+</div>
+    </div>
+			<!-- конец модального окна №2 -->	
+
+<!-- -------------------- end of LOGIN ------------------------ -->
+
+
+<!-- -------------------- REGISTRATION ------------------------ -->
+
+<!-- Модальное окно №2 -->
+<a href="#" class="overlay" id="win3"></a>
+<div class="popup">
+<div id="registration">
+   
+<form name="reg-form" class="reg-form" action="" method="post">
+
+    <div class="reg-header">
+		<h1>Авторизация</h1>
+    </div>
+
+    <div class="reg-content">		
+		<input name="surname" type="text" class="input surname" value="Фамилия" onfocus="this.value=''" />
+		<input name="name" type="text" class="input username" value="Имя" onfocus="this.value=''" />
+		<input name="patronomic" type="text" class="input patronomic" value="Отчество" onfocus="this.value=''" />
+		<input name="address" type="text" class="input address" value="Адрес доставки" onfocus="this.value=''" />
+		<input name="mobile" type="text" class="input mobile" value="Моб. телефон" onfocus="this.value=''" />
+		<input name="email" type="email" class="input email" value="E-mail" onfocus="this.value=''" />		
+		<input name="password" type="password" class="input password" value="Пароль" onfocus="this.value=''" />
+		<input name="confirm-password" type="password" class="input password" value="Подтвердите пароль" onfocus="this.value=''" />
+    </div>
+
+    <div class="reg-footer">
 		<input type="submit" name="submit" value="ВОЙТИ" class="button" />
 		<input type="submit" name="submit" value="Регистрация" class="register" />
     </div>
@@ -144,26 +181,8 @@
 </div>
     </div>
 			<!-- конец модального окна №2 -->	
-
-<script type="text/javascript">
-$(document).ready(function() {
-	$(".username").focus(function() {
-		$(".user-icon").css("left","-48px");
-	});
-	$(".username").blur(function() {
-		$(".user-icon").css("left","0px");
-	});
-	
-	$(".password").focus(function() {
-		$(".pass-icon").css("left","-48px");
-	});
-	$(".password").blur(function() {
-		$(".pass-icon").css("left","0px");
-	});
-});
-</script>
-<!-- -------------------- end of LOGIN ------------------------ -->
-	
+<!-- -------------------- end of REGISTRATION ------------------------ -->
+			
 	</section>
 	<div class="menu-m-swich"></div>
 	<div class="m-swich-off"></div>
@@ -321,99 +340,106 @@ function changePosition(link) {
 
 
 <!-- -----------------------------------------  -->
-<video width=60% height=50% controls>
-  <source src="OnePlus2.mp4" type="video/mp4">
-  Ваш браузер не поддерживает тег video. Просмотр видео не возможен.
-</video>
-ryyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-rtyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-ryyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-rtyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-ryyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-rtyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-ryyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-rtyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
+<div id="properties-list">
+abc
+</div>
 
-ryyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-rtyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-ryyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-rtyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-ryyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-rtyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-ryyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-rtyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-ryyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-rtyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-ryyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-rtyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-ryyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-rtyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-ryyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-rtyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
+<div id="goods-list">
+ <p>Мобильные телефоны </p>
+<div class="goods">
+	<div>
+		<img class="goods-img" src="images/1.png" alt="Мобильный телефон GSmart Akta A4 Dark Blue" title="Мобильный телефон GSmart Akta A4 Dark Blue">
+	</div>
+	
+	<div id="description">
+		<div id="goods-title">
+			<p>Мобильный телефон Highscreen Pure F Black</p>
+		</div>
+		<div id="goods-descr">
+<pre>
+Диагональ дисплея: 4.0" 
+Встроенная память: 8 Гб 
+Частота процессора: 1300 МГц 
+ОС: Android 5.0 
+		</div>
+		<div id="goods-cost">
+			Цена: 2099 грн.
+		</div>
+		<div id="goods-button-buy">
+			<a product="73093" buy="buy" href="#" class="buy btn-blue "> Купить </a>
+		</div>		
+		
+	</div>
+</div>
+<div class="goods">
+ananan
+</div>
+<div class="goods">
+ananan
+</div>
+<div class="goods">
+ananan
+</div>
+<div class="goods">
+ananan
+</div>
+</div>
 
-ryyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-rtyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-ryyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-rtyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-ryyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-rtyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-ryyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-rtyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-ryyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-rtyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-ryyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-rtyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-ryyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-rtyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-ryyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-rtyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
+<style>
+#properties-list{
+	border:1px solid black;
+	float:left;
+	width:21%;
+	margin-top: 1%;
+}
+#goods-list{
+	border:1px solid black;
+	float:right;
+	width:76%;	
+	margin: 1%;
 
-ryyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-rtyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-ryyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-rtyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-ryyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-rtyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-ryyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-rtyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-ryyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-rtyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-ryyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-rtyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-ryyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-rtyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-ryyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-rtyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
+}
+.goods{
+	border:1px solid black;
+	height: 260px;
+    margin: 1%;
 
-ryyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-rtyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-ryyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-rtyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-ryyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-rtyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-ryyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-rtyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
+}
 
+.goods-img{
+float:left;
+}
+
+#description{
+	width:75%;
+	float:left;
+}
+
+.buy {
+    padding: 6px 13px 7px 13px;
+    float: left;
+    text-align: center;
+    min-width: 164px;
+	}
+.btn-blue{
+    transition: background-color 0.3s ease-in 0s;
+    background: #32a1cf none repeat scroll 0% 0%;
+    text-align: center;
+    text-decoration: none;
+    color: #FFF;
+    font: 15px "PF Square Sans Probold",Arial,Helvetica,sans-serif;
+}
+
+</style>
 <!--    ------------------------------------------------------------------------------- -->
 
 
 </div>
-
-
-<style>
-#toStart{
-bottom:100px;
-position:fixed;
-right:20px;
-}
-</style>
-
- 
  
   
 	<footer id="footer">
 <div id="toStart">	
-<a href="#" onClick="scroll(0,0); return false" title="наверх"> НАВЕРХ </a> 
+<a class="toStart" href="#" onClick="scroll(0,0); return false" title="наверх"> НАВЕРХ </a> 
 </div>
 		<div class="contacts call_phone_1_1">
 			<a href="tel:84957558888" tpphone="t1" class="phone">

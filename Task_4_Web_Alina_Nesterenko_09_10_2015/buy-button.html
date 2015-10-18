@@ -27,12 +27,13 @@
 	<nav id="nav">
 		<ul>
 			<li><a href="about.html">О нас</a></li>	
-			<li><a href="goods.html">Магазин</a></li>	
+			<li><a "javascript:void(0)" onclick="loadContent('block_id')">Магазин</a></li>	
 			<li><a href=#>Доставка</a></li>	
 		</ul>
 	</nav>
 	
-	
+
+        
 		<p id="city-description">Ваш город -</p>
 		
 			<a href="#win1" id="region";>Киев</a>    <!--      -->
@@ -266,8 +267,8 @@
  
  
  
- 
- <div id="content">
+  <div id="content">
+
 
  
 	<div id="contentContainer">
@@ -337,53 +338,13 @@ function changePosition(link) {
 <div id="block"> 
 </div>
 
-
+<div id="block_id">
+<a "javascript:void(0)" onclick="loadContent('block_id')">Магазин</a>
+            Сюда будет вставлен контент
+        </div>	
+        
 
 <!-- -----------------------------------------  -->
-<div id="properties-list">
-abc
-</div>
-
-<div id="goods-list">
- <p>Мобильные телефоны </p>
-<div class="goods">
-	<div>
-		<img class="goods-img" src="images/1.png" alt="Мобильный телефон GSmart Akta A4 Dark Blue" title="Мобильный телефон GSmart Akta A4 Dark Blue">
-	</div>
-	
-	<div id="description">
-		<div id="goods-title">
-			<p>Мобильный телефон Highscreen Pure F Black</p>
-		</div>
-		<div id="goods-descr">
-<pre>
-Диагональ дисплея: 4.0" 
-Встроенная память: 8 Гб 
-Частота процессора: 1300 МГц 
-ОС: Android 5.0 
-		</div>
-		<div id="goods-cost">
-			Цена: 2099 грн.
-		</div>
-		<div id="goods-button-buy">
-			<a product="73093" buy="buy" href="#" class="buy btn-blue "> Купить </a>
-		</div>		
-		
-	</div>
-</div>
-<div class="goods">
-ananan
-</div>
-<div class="goods">
-ananan
-</div>
-<div class="goods">
-ananan
-</div>
-<div class="goods">
-ananan
-</div>
-</div>
 
 <style>
 #properties-list{
@@ -548,5 +509,23 @@ function Ascroll() {
 }
 })()
 </script>
+
+
+
+ <script>
+ /**
+            * Функция вставляет html код в элемент с id равным element_id
+            * @author ox2.ru дизайн студия
+            **/
+            function loadContent(element_id) {
+                 //Если элемент с id-шником element_id существует 
+                if (document.getElementById(element_id)) {  
+                    document.getElementById(element_id).innerHTML = 
+                    "<div id=\"properties-list\">abc</div><div id=\"goods-list\"><p>Мобильные телефоны </p><div class=\"goods\"><div><img class=\"goods-img\" src=\"images/1.png\" alt=\"Мобильный телефон GSmart Akta A4 Dark Blue\" title=\"Мобильный телефон GSmart Akta A4 Dark Blue\"></div><div id=\"description\"><div id=\"goods-title\"><p>Мобильный телефон Highscreen Pure F Black</p></div><div id=\"goods-descr\"><pre></div>";    
+                }
+            }
+        </script>
+		
+		
 </body>
 </html>

@@ -1640,6 +1640,7 @@ a {
 }
 .dropdown_1column {width: 800%;}
 .dropdown_2columns {width: 800%;}
+
 .dropdown_1column,
 .dropdown_2columns
 {
@@ -1671,7 +1672,6 @@ a {
 	height:53px;
 	padding:0;
 	margin:0;
-
 	
 	// градиент
 	background: #c4c4c9;
