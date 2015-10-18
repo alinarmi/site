@@ -2097,7 +2097,11 @@ right:20px;
 	color: #e57d00;
 }
 /* ----------------------------------------- */
-
+#cart-count{
+	color: #e57d00;
+	margin:70px 0 0 120px; 
+	font-size:26px;
+}
 /*  -------------- registration form ---------------*/
 #registration {
 	/* Center wrapper perfectly */
