@@ -26,7 +26,7 @@
             
 	<nav id="nav">
 		<ul>
-			<li><a href="about.html">О нас</a></li>	
+			<li><a href="javascript:void(0)" onclick="loadContent('diff-content')">О нас</a></li>	
 			<li><a href="goods.html">Магазин</a></li>	
 			<li><a href=#>Доставка</a></li>	
 		</ul>
@@ -43,11 +43,8 @@
    <a href="#" class="overlay" id="win1"></a>
 	<div class="popup">
 	<div id="city">
-        <span class="region-h">Выберите город</span>      
-
-            <div class="clue-region-list">
-                <div class="clue-city">
-                    <div class="col-1">
+        <p class="region-h">Выберите город</p>      
+                    <div class="column-1">
                         <ul>
                             
                             <li data-id="39273" class="wrap-city-point "><a href="#">Винница</a></li>
@@ -60,7 +57,7 @@
 							<li data-id="39273" class="wrap-city-point "><a href="#">Ивано-Франковск</a></li>
 						</ul>
 					</div>
-					<div class="col-2">
+					<div class="column-2">
                         <ul>
 							<li data-id="39273" class="wrap-city-point "><a href="#">Киев</a></li>
 							<li data-id="39273" class="wrap-city-point "><a href="#">Кировоград</a></li>
@@ -72,7 +69,7 @@
 							<li data-id="39273" class="wrap-city-point "><a href="#">Ровно</a></li>
 					</ul>
 					</div>
-					<div class="col-3">
+					<div class="column-3">
                         <ul>		
 							<li data-id="39273" class="wrap-city-point "><a href="#">Суммы</a></li>
 							<li data-id="39273" class="wrap-city-point "><a href="#">Тернополь</a></li>
@@ -84,8 +81,8 @@
 							<li data-id="39273" class="wrap-city-point "><a href="#">Черновцы</a></li>
                         </ul>
                     </div>
-                </div>
-            </div> 
+                <img class="goods-img" src="images/delivery.jpg" alt="delivery" title="">
+            
 		
 
 		<a class="close"title="Закрыть" href="#close"></a>
@@ -106,7 +103,7 @@
 			<li id="ottBasketSmallWrap" class="cart empty-small-cart">
 				<div>
 					<i class="ico">K</i>
-					<span class="m-sm-cart">Корзина:</span>
+					<a href="#win4" style="color:#fff;"><span class="m-sm-cart">Корзина:</span></a>
 					<span>0</span>
 				</div>
 			</li>
@@ -114,6 +111,8 @@
 		
 	</noindex>
 
+	
+	
 	
 <!-- -------------------- LOGIN ------------------------ -->
 
@@ -150,7 +149,7 @@
 
 <!-- -------------------- REGISTRATION ------------------------ -->
 
-<!-- Модальное окно №2 -->
+<!-- Модальное окно №3 -->
 <a href="#" class="overlay" id="win3"></a>
 <div class="popup">
 <div id="registration">
@@ -158,7 +157,7 @@
 <form name="reg-form" class="reg-form" action="" method="post">
 
     <div class="reg-header">
-		<h1>Авторизация</h1>
+		<h1>Регистрация</h1>
     </div>
 
     <div class="reg-content">		
@@ -167,21 +166,40 @@
 		<input name="patronomic" type="text" class="input patronomic" value="Отчество" onfocus="this.value=''" />
 		<input name="address" type="text" class="input address" value="Адрес доставки" onfocus="this.value=''" />
 		<input name="mobile" type="text" class="input mobile" value="Моб. телефон" onfocus="this.value=''" />
-		<input name="email" type="email" class="input email" value="E-mail" onfocus="this.value=''" />		
+		<input name="email" type="text" class="input email" value="E-mail" onfocus="this.value=''" />		
 		<input name="password" type="password" class="input password" value="Пароль" onfocus="this.value=''" />
-		<input name="confirm-password" type="password" class="input password" value="Подтвердите пароль" onfocus="this.value=''" />
+		<input name="confirm-password" type="password" class="input password" value="Пароль" onfocus="this.value=''" />
     </div>
 
     <div class="reg-footer">
-		<input type="submit" name="submit" value="ВОЙТИ" class="button" />
-		<input type="submit" name="submit" value="Регистрация" class="register" />
+		<input type="submit" name="submit" value="ЗАРЕГИСТРИРОВАТЬСЯ" class="button" />
     </div>
 
 </form>
 </div>
     </div>
-			<!-- конец модального окна №2 -->	
+			<!-- конец модального окна #3 -->	
 <!-- -------------------- end of REGISTRATION ------------------------ -->
+
+
+<!-- Модальное окно №4 -->
+
+   <a href="#" class="overlay" id="win4"></a>
+	<div class="popup">
+	<div id="cart">
+        <p class="region-h" style="font-size:28px;">Ваша корзина</p> 
+			<p id="cart-count"> Пока пуста.</p>
+                    
+                
+            
+		
+
+		<a class="close"title="Закрыть" href="#close"></a>
+    </div>
+	</div>
+			<!-- конец модального окна №4 -->	
+
+
 			
 	</section>
 	<div class="menu-m-swich"></div>
@@ -194,10 +212,10 @@
 				<i id="m-back"></i>
 				Корзина
 			</div>
-			<form class="search-form" method="get" action="http://yandex.ru/sitesearch">
+			<form class="search-form" method="get" action="http://yandex.ru/sitesearch" target=+blank;>							
 				<fieldset>
 
-					<input id="search" type="text" clear="clear" name="q" placeholder="Поиск" >
+					<input id="search" type="text" clear="clear" name="text" size="40" value="" maxlength="120" placeholder="Поиск" >
 					<input class="buttSearchSend" type="submit" value="search">
 					<a class="btnSearchClose btn-delete" href="#" style="display: none;">удалить</a>
 				</fieldset>
@@ -226,33 +244,279 @@
 			</li>
 		</ul>
 	</section>
-	
+
 	<!-- -------------------- MENU ------------------------ -->
 <div id="scroll-menu">  
  	<ul id="menu">
     <li><a href="#">Выбор по бренду</a>
 		<div class="dropdown_1column">
-			<p>1 Column content</p>
-			<p>1 Column content</p>
-			<p>1 Column content</p>
-			<p>1 Column content</p>
-
+		<div class="dropdown1">
+		
+			<p>Acer</p>
+			<p>Asus</p>
+			<p>Apple</p>
+			<p>Aquarius</p>
+			<p>Compaq</p>
+			<p>Dell</p>
+			<p>DNS</p>
+		</div>
+		<div class="dropdown1">			
+			<p>Eurocom</p>
+			<p>Excimer</p>
+			<p>Expert line</p>
+			<p>eMachines</p>
+			<p>Fujitsu</p>
+			<p>Gigabyte</p>
+			<p>Getac</p>
+		</div>
+		<div class="dropdown1">			
+			<p>HP</p>
+			<p>iRu</p>
+			<p>LG</p>
+			<p>Lenovo</p>
+			<p>MSI</p>
+			<p>Packard Bell</p>
+			<p>Panasonic</p>
+		</div>
+		<div class="dropdown1">			
+			<p>Sumsung</p>
+			<p>Sony</p>
+			<p>Toshiba</p>
+			<p>ViewSonic</p>
+			<p>3Q</p>
+			
+		</div>
+		<div class="dropdown1" id="dropdown1-img">
+			<img src="images/brands.png" alt="" title="">
+		</div>
 		</div>
 	</li>
+	
     <li><a href="#">Крупная бытовая</a>
 		<div class="dropdown_2columns">
-			<p>2 Columns content</p>
-			<p>2 Column content</p>
-			<p>2 Column content</p>
-			<p>2 Column content</p>
+		<div class="dropdown2">
+				
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+		</div>
+		<div class="dropdown1">			
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+		</div>
+		<div class="dropdown1">			
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+		</div>
+		<div class="dropdown1">			
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			
+		</div>
+		<div class="dropdown1">			
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			
+		</div>
+		<div class="dropdown1" id="dropdown3-img">
+			<img src="" alt="" title="">
+		</div>
+		</div>		
+	</li>
+    <li><a href="#">Мелкая бытовая</a>
+		<div class="dropdown_3columns">
+		<div class="dropdown1">
+		
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+		</div>
+		<div class="dropdown1">			
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+		</div>
+		<div class="dropdown1">			
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+		</div>
+		<div class="dropdown1">			
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			
+		</div>
+		<div class="dropdown1" id="dropdown3-img">
+			<img src="" alt="" title="">
+		</div>
 		</div>
 	</li>
-    <li><a href="#">Мелкая бытовая</a></li>
-    <li><a href="#">Для кухни</a></li>
-    <li><a href="#">Климат</a></li>
-	<li><a href="#">Аудио Видео Фото</a></li>
-    <li><a href="#">Компьютеры Ноутбуки</a></li>
-    <li><a href="#">Телефоны Смартфоны</a></li>
+    <li><a href="#">Для кухни</a>
+		<div class="dropdown_4columns">
+		<div class="dropdown1">
+		
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+		</div>
+		<div class="dropdown1">			
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+		</div>
+		<div class="dropdown1">			
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+		</div>
+		<div class="dropdown1">			
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			
+		</div>		
+		</div>
+	</li>
+    <li><a href="#">Климат</a>
+		<div class="dropdown_5columns">
+		<div class="dropdown1">
+		
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+		</div>
+		<div class="dropdown1">			
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+		</div>
+		<div class="dropdown1">			
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+		</div>
+		</div>
+	</li>
+	<li><a href="#">Аудио и Видео</a>
+		<div class="dropdown_6columns">
+		<div class="dropdown1">
+		
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+		</div>
+		<div class="dropdown1">			
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+		</div>
+		</div>
+	</li>
+    <li><a href="#">Компьютеры</a>
+		<div class="dropdown_7columns">
+		<div class="dropdown1">
+		
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+		</div>
+		</div>
+	</li>
+    <li><a href="#">Телефоны</a>
+		<div class="dropdown_8columns">
+		<div class="dropdown1">
+		
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+		</div>
+		</div>
+	</li>
 </ul>
 </div> 
   <!-- -------------------- end of MENU ------------------------ -->
@@ -336,204 +600,15 @@ function changePosition(link) {
 
 <div id="block"> 
 </div>
+<div id="diff-content">
+<div id="about">
 
+<p> Мы осуществляем доставку во все крупные города Украины. 
+</p>
 
-
-<!-- -----------------------------------------  -->
-<div id="properties-list">
-	<img style="margin-left: 30px;"src="images/sort-list.png" alt="" title="">
-</div>
-
-<div id="goods-list">
- <p>Мобильные телефоны </p>
-<div class="goods">
-	<div>
-		<img class="goods-img" src="images/1.png" alt="Мобильный телефон GSmart Akta A4 Dark Blue" title="Мобильный телефон GSmart Akta A4 Dark Blue">
-	</div>
-	
-	<div id="description">
-		<div id="goods-title">
-			<p>Мобильный телефон Highscreen Pure F Black</p>
-		</div>
-		<div id="goods-descr">
-<pre>
-Диагональ дисплея: 4.0" 
-Встроенная память: 8 Гб 
-Частота процессора: 1300 МГц 
-ОС: Android 5.0 
-		</div>
-		<div id="goods-cost">
-			Цена: 2099 грн.
-		</div>
-		<div id="goods-button-buy">
-			<a product="73093" buy="buy" href="#" class="buy btn-blue "> Купить </a>
-		</div>		
-		
-	</div>
-</div>
-<div class="goods">
-	<div>
-		<img class="goods-img" src="images/1.png" alt="Мобильный телефон GSmart Akta A4 Dark Blue" title="Мобильный телефон GSmart Akta A4 Dark Blue">
-	</div>
-	
-	<div id="description">
-		<div id="goods-title">
-			<p>Мобильный телефон Highscreen Pure F Black</p>
-		</div>
-		<div id="goods-descr">
-<pre>
-Диагональ дисплея: 4.0" 
-Встроенная память: 8 Гб 
-Частота процессора: 1300 МГц 
-ОС: Android 5.0 
-		</div>
-		<div id="goods-cost">
-			Цена: 2099 грн.
-		</div>
-		<div id="goods-button-buy">
-			<a product="73093" buy="buy" href="#" class="buy btn-blue "> Купить </a>
-		</div>		
-		
-	</div>
-</div>
-<div class="goods">
-	<div>
-		<img class="goods-img" src="images/1.png" alt="Мобильный телефон GSmart Akta A4 Dark Blue" title="Мобильный телефон GSmart Akta A4 Dark Blue">
-	</div>
-	
-	<div id="description">
-		<div id="goods-title">
-			<p>Мобильный телефон Highscreen Pure F Black</p>
-		</div>
-		<div id="goods-descr">
-<pre>
-Диагональ дисплея: 4.0" 
-Встроенная память: 8 Гб 
-Частота процессора: 1300 МГц 
-ОС: Android 5.0 
-		</div>
-		<div id="goods-cost">
-			Цена: 2099 грн.
-		</div>
-		<div id="goods-button-buy">
-			<a product="73093" buy="buy" href="#" class="buy btn-blue "> Купить </a>
-		</div>		
-		
-	</div>
-</div>
-<div class="goods">
-	<div>
-		<img class="goods-img" src="images/1.png" alt="Мобильный телефон GSmart Akta A4 Dark Blue" title="Мобильный телефон GSmart Akta A4 Dark Blue">
-	</div>
-	
-	<div id="description">
-		<div id="goods-title">
-			<p>Мобильный телефон Highscreen Pure F Black</p>
-		</div>
-		<div id="goods-descr">
-<pre>
-Диагональ дисплея: 4.0" 
-Встроенная память: 8 Гб 
-Частота процессора: 1300 МГц 
-ОС: Android 5.0 
-		</div>
-		<div id="goods-cost">
-			Цена: 2099 грн.
-		</div>
-		<div id="goods-button-buy">
-			<a product="73093" buy="buy" href="#" class="buy btn-blue "> Купить </a>
-		</div>		
-		
-	</div>
-</div>
-<div class="goods">
-	<div>
-		<img class="goods-img" src="images/1.png" alt="Мобильный телефон GSmart Akta A4 Dark Blue" title="Мобильный телефон GSmart Akta A4 Dark Blue">
-	</div>
-	
-	<div id="description">
-		<div id="goods-title">
-			<p>Мобильный телефон Highscreen Pure F Black</p>
-		</div>
-		<div id="goods-descr">
-<pre>
-Диагональ дисплея: 4.0" 
-Встроенная память: 8 Гб 
-Частота процессора: 1300 МГц 
-ОС: Android 5.0 
-		</div>
-		<div id="goods-cost">
-			Цена: 2099 грн.
-		</div>
-		<div id="goods-button-buy">
-			<a product="73093" buy="buy" href="#" class="buy btn-blue "> Купить </a>
-		</div>		
-		
-	</div>
 </div>
 </div>
 
-<style>
-#properties-list{
-	float:left;
-	width:21%;
-	margin-top: 1%;
-}
-#goods-list{
-	border:1px solid #e4e4e4;
-	float:right;
-	width:76%;	
-	margin: 1%;
-
-}
-#goods-list>p{
-	margin-left: 400px;
-	font-weight:700;
-	font-size:26px;
-}
-.goods{
-	border:1px solid #e4e4e4;
-	height: 260px;
-    margin: 1%;
-
-}
-
-.goods-img{
-	float:left;
-	margin:30px;
-}
-
-#description{
-	width:75%;
-	float:left;
-}
-
-.buy {
-    padding: 6px 13px 7px 13px;
-    float: left;
-    text-align: center;
-    min-width: 164px;
-	}
-.btn-blue{
-    transition: background-color 0.3s ease-in 0s;
-    background: #32a1cf none repeat scroll 0% 0%;
-    text-align: center;
-    text-decoration: none;
-    color: #FFF;
-    font: 15px "PF Square Sans Probold",Arial,Helvetica,sans-serif;
-}
-#goods-title{
-	font-weight:700;
-}
-#goods-cost{
-	font-weight:700;
-	float:left;
-}
-#goods-button-buy{
-	float:left;
-	margin-left:400px;
-}
-</style>
 <!--    ------------------------------------------------------------------------------- -->
 
 
@@ -590,7 +665,7 @@ function changePosition(link) {
 <div class="col-1">
 <noindex>
 <span class="footer-h">Подпишитесь на акции и скидки</span>
-<form class="subscription-form" action="/personal/subscribe/">
+<form class="subscription-form" action="">
 <fieldset id="field-subscription">
 <div class="text">
 <input type="text" placeholder="Введите e-mail" name="sub_email" clear="clear">
@@ -651,5 +726,19 @@ function Ascroll() {
 }
 })()
 </script>
+
+<script>
+ /**
+            * Функция вставляет html код в элемент с id равным element_id
+            * @author ox2.ru дизайн студия
+            **/
+            function loadContent(element_id) {
+                 //Если элемент с id-шником element_id существует 
+                if (document.getElementById(element_id)) {  
+                    document.getElementById(element_id).innerHTML = 
+                       "<div id=\"about\"><p> Интернет-магазин ABC Company – крупнейший магазин электроники и бытовой техники в Украине. Мы предоставляем качественные товары и сервис. Наша философия — делать жизнь людей комфортнее, помогать им идти в ногу со временем, следить за новинками в цифровом мире.</p><p>Наша цель — достичь бескомпромиссного качества. А как известно, качество - в деталях. ABC Company является официальным дилером известных мировых брендов. Именно у нас Вы можете приобрести действительно качественные товары.</p></div>";
+                }
+            }
+        </script>
 </body>
 </html>

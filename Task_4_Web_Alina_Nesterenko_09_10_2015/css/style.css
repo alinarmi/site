@@ -2288,3 +2288,8 @@ right:20px;
 .column-1 li, .column-2 li, .column-3 li{
 	padding-top:3px;
 }
+
+
+#diff-content{
+	margin: 30px;
+}
