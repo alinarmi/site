@@ -6,7 +6,7 @@
 		
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/close-tab.js"></script>	
-	<script src="js/script-slider.js"></script>	
+	<script src="js/popup.js"></script>	
 	
 	<link href="css/style.css" rel="stylesheet" type="text/css" /> 
 	<link href="icon.ico" rel="shortcut icon" type="image/x-icon"> 
@@ -20,75 +20,208 @@
 
 	<!--header starts-->
 	<header id="header">
+	
 	<!--top bar starts-->
 	<section class="top-bar">
             
 	<nav id="nav">
 		<ul>
-			<li><a href="about.html">О нас</a></li>
-	
-			<li><a href=goods.html>Магазин</a></li>
-	
-			<li><a href=#>Доставка</a></li>
-	
+			<li><a href="about.html">О нас</a></li>	
+			<li><a href="goods.html">Магазин</a></li>	
+			<li><a href=#>Доставка</a></li>	
 		</ul>
 	</nav>
 	
-	<p id="city">Ваш город -</p>
-    <a href="#region-lightbox" data-id="36966" class="tp-region-modal-show region open-popup">Киев</a>    <!-- -->                 
+	
+		<p id="city-description">Ваш город -</p>
+		
+			<a href="#win1" id="region";>Киев</a>    <!--      -->
+			
+			
+		<!-- Модальное окно №1 -->
+
+   <a href="#" class="overlay" id="win1"></a>
+	<div class="popup">
+	<div id="city">
+        <p class="region-h">Выберите город</p>      
+                    <div class="column-1">
+                        <ul>
+                            
+                            <li data-id="39273" class="wrap-city-point "><a href="#">Винница</a></li>
+                            <li data-id="39273" class="wrap-city-point "><a href="#">Волынь</a></li>
+							<li data-id="39273" class="wrap-city-point "><a href="#">Днепропетровск</a></li>
+							<li data-id="39273" class="wrap-city-point "><a href="#">Донецк</a></li>
+							<li data-id="39273" class="wrap-city-point "><a href="#">Житомир</a></li>
+							<li data-id="39273" class="wrap-city-point "><a href="#">Закарпатье</a></li>
+							<li data-id="39273" class="wrap-city-point "><a href="#">Запорожье</a></li>
+							<li data-id="39273" class="wrap-city-point "><a href="#">Ивано-Франковск</a></li>
+						</ul>
+					</div>
+					<div class="column-2">
+                        <ul>
+							<li data-id="39273" class="wrap-city-point "><a href="#">Киев</a></li>
+							<li data-id="39273" class="wrap-city-point "><a href="#">Кировоград</a></li>
+							<li data-id="39273" class="wrap-city-point "><a href="#">Луганск</a></li>
+							<li data-id="39273" class="wrap-city-point "><a href="#">Львов</a></li>
+							<li data-id="39273" class="wrap-city-point "><a href="#">Николаев</a></li>
+							<li data-id="39273" class="wrap-city-point "><a href="#">Одесса</a></li>
+							<li data-id="39273" class="wrap-city-point "><a href="#">Полтава</a></li>
+							<li data-id="39273" class="wrap-city-point "><a href="#">Ровно</a></li>
+					</ul>
+					</div>
+					<div class="column-3">
+                        <ul>		
+							<li data-id="39273" class="wrap-city-point "><a href="#">Суммы</a></li>
+							<li data-id="39273" class="wrap-city-point "><a href="#">Тернополь</a></li>
+							<li data-id="39273" class="wrap-city-point "><a href="#">Харьков</a></li>
+							<li data-id="39273" class="wrap-city-point "><a href="#">Херсон</a></li>
+							<li data-id="39273" class="wrap-city-point "><a href="#">Хмельницкий</a></li>
+							<li data-id="39273" class="wrap-city-point "><a href="#">Черкассы</a></li>
+							<li data-id="39273" class="wrap-city-point "><a href="#">Чернигов</a></li>
+							<li data-id="39273" class="wrap-city-point "><a href="#">Черновцы</a></li>
+                        </ul>
+                    </div>
+                <img class="goods-img" src="images/delivery.jpg" alt="delivery" title="">
             
-   	
+		
+
+		<a class="close"title="Закрыть" href="#close"></a>
+    </div>
+	</div>
+			<!-- конец модального окна №1 -->	
+		
 	<noindex>
 		<ul class="user-options">
 			<li class="user">
 			<a class="open-popup" href="#entry-lightbox">
 				<i class="ico">L</i>
-				<span class="name">Вход</span>
-			
-				<span class="small-name">
-					<i>Вход</i>
-				</span>
+				<!--<span class="name">Вход</span> -->
+				<a href="#win2" class="name">Вход</a>    <!--      -->				
 			</a>
 			</li>
 			
 			<li id="ottBasketSmallWrap" class="cart empty-small-cart">
 				<div>
 					<i class="ico">K</i>
-					<span class="m-sm-cart">Корзина</span>
+					<a href="#win4" style="color:#fff;"><span class="m-sm-cart">Корзина:</span></a>
 					<span>0</span>
 				</div>
 			</li>
-			
-
-
 		</ul>
 		
 	</noindex>
+
 	
+	
+	
+<!-- -------------------- LOGIN ------------------------ -->
+
+<!-- Модальное окно №2 -->
+<a href="#" class="overlay" id="win2"></a>
+<div class="popup">
+<div id="log">
+    <div class="user-icon"></div>
+    <div class="pass-icon"></div>
+	
+<form name="login-form" class="login-form" action="" method="post">
+
+    <div class="log-header">
+		<h1>Авторизация</h1>
+    </div>
+
+    <div class="log-content">
+		<input name="username" type="email" class="input username" value="Логин" onfocus="this.value=''" />
+		<input name="password" type="password" class="input password" value="Пароль" onfocus="this.value=''" />
+    </div>
+
+    <div class="log-footer">
+		<input type="submit" name="submit" value="ВОЙТИ" class="button" />
+		<a href="#win3" class="name" id="reg-link">Регистрация</a>    <!--      -->	
+    </div>
+
+</form>
+</div>
+    </div>
+			<!-- конец модального окна №2 -->	
+
+<!-- -------------------- end of LOGIN ------------------------ -->
+
+
+<!-- -------------------- REGISTRATION ------------------------ -->
+
+<!-- Модальное окно №3 -->
+<a href="#" class="overlay" id="win3"></a>
+<div class="popup">
+<div id="registration">
+   
+<form name="reg-form" class="reg-form" action="" method="post">
+
+    <div class="reg-header">
+		<h1>Регистрация</h1>
+    </div>
+
+    <div class="reg-content">		
+		<input name="surname" type="text" class="input surname" value="Фамилия" onfocus="this.value=''" />
+		<input name="name" type="text" class="input username" value="Имя" onfocus="this.value=''" />
+		<input name="patronomic" type="text" class="input patronomic" value="Отчество" onfocus="this.value=''" />
+		<input name="address" type="text" class="input address" value="Адрес доставки" onfocus="this.value=''" />
+		<input name="mobile" type="text" class="input mobile" value="Моб. телефон" onfocus="this.value=''" />
+		<input name="email" type="text" class="input email" value="E-mail" onfocus="this.value=''" />		
+		<input name="password" type="password" class="input password" value="Пароль" onfocus="this.value=''" />
+		<input name="confirm-password" type="password" class="input password" value="Пароль" onfocus="this.value=''" />
+    </div>
+
+    <div class="reg-footer">
+		<input type="submit" name="submit" value="ЗАРЕГИСТРИРОВАТЬСЯ" class="button" />
+    </div>
+
+</form>
+</div>
+    </div>
+			<!-- конец модального окна #3 -->	
+<!-- -------------------- end of REGISTRATION ------------------------ -->
+
+
+<!-- Модальное окно №4 -->
+
+   <a href="#" class="overlay" id="win4"></a>
+	<div class="popup">
+	<div id="cart">
+        <p class="region-h" style="font-size:28px;">Ваша корзина</p> 
+			<p id="cart-count"> Пока пуста.</p>
+                    
+                
+            
+		
+
+		<a class="close"title="Закрыть" href="#close"></a>
+    </div>
+	</div>
+			<!-- конец модального окна №4 -->	
+
+
+			
 	</section>
 	<div class="menu-m-swich"></div>
 	<div class="m-swich-off"></div>
 	
 	<section class="header-info">
-		<a class="logo" href="index.html">
-			a
-			<span>b</span>
-			c
-		</a>
+		<a class="logo" href="index.html"></a>
 		<noindex>
 			<div class="mini-m-h">
 				<i id="m-back"></i>
 				Корзина
 			</div>
-			<form class="search-form" action="/search/">
+			<form class="search-form" method="get" action="http://yandex.ru/sitesearch" target=+blank;>							
 				<fieldset>
-					<input id="search" class="input-autocomplte" type="text" autocomplete="off" x-webkit-speech="x-webkit-speech" clear="clear" name="q" value="Поиск" default-value="Поиск">
+
+					<input id="search" type="text" clear="clear" name="text" size="40" value="" maxlength="120" placeholder="Поиск" >
 					<input class="buttSearchSend" type="submit" value="search">
 					<a class="btnSearchClose btn-delete" href="#" style="display: none;">удалить</a>
 				</fieldset>
 			</form>
 		</noindex>
-		
+	
 		<div class="contacts call_phone_1_1">
 			<a class="phone" tpphone="t1" href="tel:84957558888">
 				<span>8 (010)</span>
@@ -111,11 +244,287 @@
 			</li>
 		</ul>
 	</section>
+
+	<!-- -------------------- MENU ------------------------ -->
+<div id="scroll-menu">  
+ 	<ul id="menu">
+    <li><a href="#">Выбор по бренду</a>
+		<div class="dropdown_1column">
+		<div class="dropdown1">
+		
+			<p>Acer</p>
+			<p>Asus</p>
+			<p>Apple</p>
+			<p>Aquarius</p>
+			<p>Compaq</p>
+			<p>Dell</p>
+			<p>DNS</p>
+		</div>
+		<div class="dropdown1">			
+			<p>Eurocom</p>
+			<p>Excimer</p>
+			<p>Expert line</p>
+			<p>eMachines</p>
+			<p>Fujitsu</p>
+			<p>Gigabyte</p>
+			<p>Getac</p>
+		</div>
+		<div class="dropdown1">			
+			<p>HP</p>
+			<p>iRu</p>
+			<p>LG</p>
+			<p>Lenovo</p>
+			<p>MSI</p>
+			<p>Packard Bell</p>
+			<p>Panasonic</p>
+		</div>
+		<div class="dropdown1">			
+			<p>Sumsung</p>
+			<p>Sony</p>
+			<p>Toshiba</p>
+			<p>ViewSonic</p>
+			<p>3Q</p>
+			
+		</div>
+		<div class="dropdown1" id="dropdown1-img">
+			<img src="images/brands.png" alt="" title="">
+		</div>
+		</div>
+	</li>
 	
+    <li><a href="#">Крупная бытовая</a>
+		<div class="dropdown_2columns">
+		<div class="dropdown2">
+				
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+		</div>
+		<div class="dropdown1">			
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+		</div>
+		<div class="dropdown1">			
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+		</div>
+		<div class="dropdown1">			
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			
+		</div>
+		<div class="dropdown1">			
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			
+		</div>
+		<div class="dropdown1" id="dropdown3-img">
+			<img src="" alt="" title="">
+		</div>
+		</div>		
+	</li>
+    <li><a href="#">Мелкая бытовая</a>
+		<div class="dropdown_3columns">
+		<div class="dropdown1">
+		
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+		</div>
+		<div class="dropdown1">			
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+		</div>
+		<div class="dropdown1">			
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+		</div>
+		<div class="dropdown1">			
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			
+		</div>
+		<div class="dropdown1" id="dropdown3-img">
+			<img src="" alt="" title="">
+		</div>
+		</div>
+	</li>
+    <li><a href="#">Для кухни</a>
+		<div class="dropdown_4columns">
+		<div class="dropdown1">
+		
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+		</div>
+		<div class="dropdown1">			
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+		</div>
+		<div class="dropdown1">			
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+		</div>
+		<div class="dropdown1">			
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			
+		</div>		
+		</div>
+	</li>
+    <li><a href="#">Климат</a>
+		<div class="dropdown_5columns">
+		<div class="dropdown1">
+		
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+		</div>
+		<div class="dropdown1">			
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+		</div>
+		<div class="dropdown1">			
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+		</div>
+		</div>
+	</li>
+	<li><a href="#">Аудио и Видео</a>
+		<div class="dropdown_6columns">
+		<div class="dropdown1">
+		
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+		</div>
+		<div class="dropdown1">			
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+		</div>
+		</div>
+	</li>
+    <li><a href="#">Компьютеры</a>
+		<div class="dropdown_7columns">
+		<div class="dropdown1">
+		
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+		</div>
+		</div>
+	</li>
+    <li><a href="#">Телефоны</a>
+		<div class="dropdown_8columns">
+		<div class="dropdown1">
+		
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+			<p>Пункт меню</p>
+		</div>
+		</div>
+	</li>
+</ul>
+</div> 
+  <!-- -------------------- end of MENU ------------------------ -->
+ 
 	</header>
  
  
- 
+  
  
  <!--                   ----------------------------------------------------------                         -->
  
@@ -123,10 +532,7 @@
  
  
  <div id="content">
- 
- <div id="main-menu">
- </div>
- 
+
  
 	<div id="contentContainer">
 		<div id="wr">
@@ -194,12 +600,9 @@ function changePosition(link) {
 
 <div id="block"> 
 </div>
-
-
-<!-- -----------------------------------------  -->
-
+<div id="diff-content">
 <div id="about">
-<pre>
+
 <p> Интернет-магазин ABC Company – крупнейший магазин электроники и бытовой техники в Украине. Мы предоставляем качественные товары и сервис. 
 Наша философия — делать жизнь людей комфортнее, помогать им идти в ногу со временем, следить за новинками в цифровом мире.
 
@@ -209,29 +612,22 @@ ABC Company является официальным дилером извест�
 
 </p>
 </div>
-
+</div>
 <style>
-#about{
-	color:#000;
-	font-size: 16px;
+#diff-content{
+	margin: 30px;
 }
 </style>
-
-
 <!--    ------------------------------------------------------------------------------- -->
 
 
-
-
-
-
-
+</div>
  
- 
- 
+  
 	<footer id="footer">
-	
-
+<div id="toStart">	
+<a class="toStart" href="#" onClick="scroll(0,0); return false" title="наверх"> НАВЕРХ </a> 
+</div>
 		<div class="contacts call_phone_1_1">
 			<a href="tel:84957558888" tpphone="t1" class="phone">
 				<span>8 (010)</span>
@@ -278,7 +674,7 @@ ABC Company является официальным дилером извест�
 <div class="col-1">
 <noindex>
 <span class="footer-h">Подпишитесь на акции и скидки</span>
-<form class="subscription-form" action="/personal/subscribe/">
+<form class="subscription-form" action="">
 <fieldset id="field-subscription">
 <div class="text">
 <input type="text" placeholder="Введите e-mail" name="sub_email" clear="clear">
@@ -287,9 +683,9 @@ ABC Company является официальным дилером извест�
 </fieldset>
 </form>
 <div id="footer-share">
-<a class="fb_share" title="Технопарк в Facebook" href="https://www.facebook.com/technoparkru" target="_blank"></a>
-<a class="vk_share" title="Технопарк Вконтакте" href="http://vk.com/technoparkru" target="_blank"></a>
-<a class="plus_share" title="Технопарк в Google+" href="https://plus.google.com/105279620647338743694/posts" target="_blank"></a>
+<a class="fb_share" title="Технопарк в Facebook" href="#" target="_blank"></a>
+<a class="vk_share" title="Технопарк Вконтакте" href="#" target="_blank"></a>
+<a class="plus_share" title="Технопарк в Google+" href="#" target="_blank"></a>
 </div>
 
 </noindex>
@@ -297,8 +693,47 @@ ABC Company является официальным дилером извест�
 
 
 	</footer>
+<div id="copyright">
+	<p>© 2015 Alina Nesterenko</p>
+</div>
 
 </div>
 
+
+<script>
+(function(){  // анонимная функция (function(){ })(), чтобы переменные "a" и "b" не стали глобальными
+var a = document.querySelector('#scroll-menu'), b = null;  // селектор блока, который нужно закрепить
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false);  // если у html и body высота равна 100%
+function Ascroll() {
+  if (b == null) {  // добавить потомка-обёртку, чтобы убрать зависимость с соседями
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) {  // перечислить стили CSS, которые нужно скопировать с родителя
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');  // создать потомка
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild);  // поместить потомка в цепляющийся блок первым
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) {  // переместить во вновь созданного потомка всех остальных потомков (итого: создан потомок-обёртка, внутри которого по прежнему работают скрипты)
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px';  // если под скользящим элементом есть другие блоки, можно своё значение
+    a.style.padding = '0';
+    a.style.border = '0';  // если элементу присвоен padding или border
+  }
+  if (a.getBoundingClientRect().top <= 0) { // elem.getBoundingClientRect() возвращает в px координаты элемента относительно верхнего левого угла области просмотра окна браузера
+    b.className = 'sticky';
+  } else {
+    b.className = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);  // если изменить размер окна браузера, изменится ширина элемента
+}
+})()
+</script>
 </body>
 </html>
